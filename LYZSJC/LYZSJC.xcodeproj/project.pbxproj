@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		541FC7D1D787AA90CC68124F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E2F8FD02A6AA819FC50066 /* libPods.a */; };
+		79D5F5E81CC631580086B56F /* NSDate+SystemTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */; };
+		79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5EA1CC631650086B56F /* JLKPedometer.m */; };
 		B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC71CA44EA500F0D799 /* Assets.xcassets */; };
 		B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC91CA44EA500F0D799 /* LaunchScreen.storyboard */; };
 		B1178ED61CA44EA500F0D799 /* LYZSJCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1178ED51CA44EA500F0D799 /* LYZSJCTests.m */; };
@@ -66,6 +68,10 @@
 /* Begin PBXFileReference section */
 		28AD5C40EC2E9B24A8F81EC5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		49EA03FF93722051177542C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		79D5F5E61CC631580086B56F /* NSDate+SystemTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SystemTimeZone.h"; sourceTree = "<group>"; };
+		79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SystemTimeZone.m"; sourceTree = "<group>"; };
+		79D5F5E91CC631650086B56F /* JLKPedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKPedometer.h; sourceTree = "<group>"; };
+		79D5F5EA1CC631650086B56F /* JLKPedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKPedometer.m; sourceTree = "<group>"; };
 		B1178EB81CA44EA400F0D799 /* LYZSJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYZSJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1178EC71CA44EA500F0D799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1178ECA1CA44EA500F0D799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -333,6 +339,8 @@
 				B1B10C061CC4C596003B45EF /* SQConst.h */,
 				B1B10C071CC4C596003B45EF /* SQConst.m */,
 				B1C880251CC5C1E40024C550 /* JLKURLHeader.h */,
+				79D5F5E91CC631650086B56F /* JLKPedometer.h */,
+				79D5F5EA1CC631650086B56F /* JLKPedometer.m */,
 			);
 			path = Ohter;
 			sourceTree = "<group>";
@@ -400,6 +408,8 @@
 		B1453C3D1CBFDB9C00207EE4 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				79D5F5E61CC631580086B56F /* NSDate+SystemTimeZone.h */,
+				79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */,
 				B1453C5F1CC07BD100207EE4 /* UIView+SQCustom.h */,
 				B1453C601CC07BD100207EE4 /* UIView+SQCustom.m */,
 				B1453C641CC0C06500207EE4 /* UIBarButtonItem+SQCustom.h */,
@@ -571,13 +581,17 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = SQ;
+				CLASSPREFIX = JLK;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = SQ;
+				ORGANIZATIONNAME = JLK;
 				TargetAttributes = {
 					B1178EB71CA44EA400F0D799 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = WB6FNA5UM2;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					B1178ED01CA44EA500F0D799 = {
 						CreatedOnToolsVersion = 7.2;
@@ -695,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */,
 				B1B10C081CC4C596003B45EF /* SQConst.m in Sources */,
 				B196BF2A1CC5276F0097A56F /* SQHomeTitleButton.m in Sources */,
 				B1453C661CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m in Sources */,
@@ -719,6 +734,7 @@
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,
 				B196BF211CC4FF820097A56F /* SQTopic.m in Sources */,
 				B1C8801E1CC5C1640024C550 /* YGJobTableViewCell.m in Sources */,
+				79D5F5E81CC631580086B56F /* NSDate+SystemTimeZone.m in Sources */,
 				B196BF1E1CC4E1340097A56F /* SQAddView.m in Sources */,
 				B1453C631CC0BF9D00207EE4 /* Foundation+Log.m in Sources */,
 				B196BF271CC518540097A56F /* SQTopicTableViewController.m in Sources */,
@@ -853,6 +869,7 @@
 			baseConfigurationReference = 49EA03FF93722051177542C2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = LYZSJC/Classes/Ohter/PrefixHeader.pch;
 				INFOPLIST_FILE = LYZSJC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -866,6 +883,7 @@
 			baseConfigurationReference = 28AD5C40EC2E9B24A8F81EC5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = LYZSJC/Classes/Ohter/PrefixHeader.pch;
 				INFOPLIST_FILE = LYZSJC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

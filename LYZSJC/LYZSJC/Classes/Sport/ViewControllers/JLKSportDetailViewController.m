@@ -8,7 +8,7 @@
 
 #import "JLKSportDetailViewController.h"
 
-@interface JLKSportDetailViewController ()
+@interface JLKSportDetailViewController () 
 
 
 @end
@@ -27,7 +27,7 @@
     [self loadWebView];
 }
 
-/*
+/**
     创建WebView
  */
 - (void)loadWebView
@@ -35,12 +35,12 @@
     // 加载页面
     NSURL *url = [NSURL URLWithString:self.urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [(UIWebView *)self.view loadRequest:request];
+    UIWebView *webView = (UIWebView *)self.view;
+    [webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

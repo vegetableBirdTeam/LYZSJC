@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  LYZSJC
+//
+//  Created by 沈强 on 16/4/15.
+//  Copyright © 2016年 SQ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define SQLog(...) NSLog(__VA_ARGS__)
+#else
+#define SQLog(...)
+#endif
+
+#import "SQConst.h"
+#import "JLKURLHeader.h"
+
+#import "UIView+SQCustom.h"
+#import "UIBarButtonItem+SQCustom.h"
+#import "NSDate+SQCustom.h"
+#import "UIImageView+WebCache.h"
+
+#define SQLogFunc SQLog(@"%s", __func__)
+
+#define SQRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
+
+#define SQGlobalBkg SQRGBColor(223, 223, 223)
+
+/** 屏幕的宽度 */
+#define SQScreenW [UIScreen mainScreen].bounds.size.width
+/** 屏幕的高度 */
+#define SQScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif

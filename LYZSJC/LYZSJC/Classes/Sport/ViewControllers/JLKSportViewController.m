@@ -9,6 +9,8 @@
 #import "JLKSportViewController.h"
 #import "SQSportViewController.h"
 
+#import "JLKPedometer.h"
+
 @interface JLKSportViewController () <UIScrollViewDelegate>
 
 /** 标签栏底部的红色指示器 */
@@ -19,6 +21,9 @@
 @property (nonatomic, weak) UIView *titlesView;
 /** 底部的所有内容 */
 @property (nonatomic, weak) UIScrollView *contentView;
+
+/** 步数视图 */
+@property (nonatomic, strong) UIButton *stepCountButton;
 
 @end
 
@@ -32,6 +37,9 @@
     
     // 初始化子控制器
     [self setupChildViewControllers];
+    
+    // 设置步数视图
+    [self setupStepView];
     
     // 设置顶部的标签栏
     [self setupTitlesView];
@@ -80,6 +88,72 @@
 }
 
 /**
+ *  步数视图
+ */
+- (void)setupStepView {
+    UIView *stepView = [[UIView alloc] init];
+    stepView.alpha = 0.5;
+    stepView.width = SQScreenW;
+    stepView.height = JLKStepViewH;
+    stepView.y = SQTitlesViewY;
+    
+    self.stepCountButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _stepCountButton.backgroundColor = [UIColor blueColor];
+    _stepCountButton.width = stepView.width / 2;
+    _stepCountButton.height = stepView.height;
+    [_stepCountButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
+    _stepCountButton.titleLabel.font = [UIFont boldSystemFontOfSize:40];
+    _stepCountButton.userInteractionEnabled = NO;
+    [self getStepNumber];
+    
+    UIButton *rankButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    rankButton.backgroundColor = [UIColor redColor];
+    rankButton.width = stepView.width / 2;
+    rankButton.height = stepView.height;
+    rankButton.x = stepView.width / 2;
+    rankButton.titleLabel.font = [UIFont boldSystemFontOfSize:40];
+    [rankButton setTitle:@"排名:" forState:UIControlStateNormal];
+    [rankButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [rankButton addTarget:self action:@selector(pushRankList) forControlEvents:UIControlEventTouchUpInside];
+    
+    [stepView addSubview:_stepCountButton];
+    [stepView addSubview:rankButton];
+    
+    [self.view addSubview:stepView];
+}
+
+/**
+ *  获取步数
+ */
+- (void)getStepNumber
+{
+    JLKPedometer *pedometer = [[JLKPedometer alloc] init];
+    [pedometer stepFromTodayWithHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
+        NSString *stepString = [pedometerData.numberOfSteps stringValue];
+        NSString *titleString = [NSString stringWithFormat:@"%@步", stepString];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_stepCountButton setTitle:titleString forState:UIControlStateNormal];
+        });
+    }];
+}
+
+/**
+ *  根据用户ID获取排名
+ */
+- (void)getRankWithUserID:(NSString *)userID
+{
+    
+}
+
+/**
+ *  推出排行界面
+ */
+- (void)pushRankList
+{
+    
+}
+
+/**
  *  设置顶部的标签栏
  */
 - (void)setupTitlesView {
@@ -87,7 +161,7 @@
     UIView *titlesView = [[UIView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
     titlesView.width = SQScreenW;
-    titlesView.y = SQTitlesViewY;
+    titlesView.y = SQTitlesViewY + JLKStepViewH;
     titlesView.height = SQTitlesViewH;
     // 导致里面的子控件也会成为半透明，不建议使用
     //    titlesView.alpha = 0.5;
@@ -156,7 +230,7 @@
  */
 - (void)setupNav {
     // 设置导航栏内容
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.title = @"运动";
     
     // 设置背景色
     self.view.backgroundColor = SQGlobalBkg;

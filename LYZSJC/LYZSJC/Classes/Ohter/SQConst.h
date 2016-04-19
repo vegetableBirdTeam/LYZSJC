@@ -29,6 +29,8 @@ typedef enum {
 UIKIT_EXTERN CGFloat const SQTitlesViewH;
 /** 精华-所有顶部标题宽度 */
 UIKIT_EXTERN CGFloat const SQTitlesViewY;
+/** 运动-所有显示步数控件高度 */
+UIKIT_EXTERN CGFloat const JLKStepViewH;
 
 /** 精华-cell-间距 */
 UIKIT_EXTERN CGFloat const SQTopicCellMargin;

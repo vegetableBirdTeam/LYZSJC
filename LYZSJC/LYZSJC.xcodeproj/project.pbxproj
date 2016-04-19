@@ -587,6 +587,7 @@
 				TargetAttributes = {
 					B1178EB71CA44EA400F0D799 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = A29QK2NWP9;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 0;

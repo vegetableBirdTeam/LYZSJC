@@ -43,12 +43,6 @@ static NSString * const SQSportID = @"sport";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 设置导航栏内容
-    //self.navigationItem.title = @"运动";
-    
-    //  设置背景色
-    //self.view.backgroundColor = [UIColor blueColor];
-    
     // 初始化表格
     [self setupTableView];
     
@@ -62,7 +56,7 @@ static NSString * const SQSportID = @"sport";
 - (void)setupTableView {
     // 设置内边距
     CGFloat bottom = self.tabBarController.tabBar.height;
-    CGFloat top = SQTitlesViewY + SQTitlesViewH;
+    CGFloat top = SQTitlesViewY + SQTitlesViewH + JLKStepViewH;
     self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     self.automaticallyAdjustsScrollViewInsets = NO;
     

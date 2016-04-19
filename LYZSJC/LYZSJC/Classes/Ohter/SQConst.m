@@ -12,6 +12,8 @@
 CGFloat const SQTitlesViewH = 35;
 /** 运动-所有顶部标题宽度 */
 CGFloat const SQTitlesViewY = 64;
+/** 运动-所有显示步数控件高度 */
+CGFloat const JLKStepViewH = 64;
 
 /** 精华-cell-间距 */
 CGFloat const SQTopicCellMargin = 10;

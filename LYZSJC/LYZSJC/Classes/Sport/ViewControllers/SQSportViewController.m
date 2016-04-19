@@ -69,7 +69,7 @@ static NSString * const SQSportID = @"sport";
     // 设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
-    self.tableView.separatorStyle = UITableViewCellEditingStyleNone;
+    //self.tableView.separatorStyle = UITableViewCellEditingStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
     
     // 注册

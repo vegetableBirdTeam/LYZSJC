@@ -30,6 +30,7 @@
  */
 - (BOOL)isYesterday;
 
+/** 测试 */
 + (NSDate *)systemTimeZoneWithDate:(NSDate *)date;
 
 @end

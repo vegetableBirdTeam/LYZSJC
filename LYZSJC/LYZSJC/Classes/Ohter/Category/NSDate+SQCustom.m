@@ -71,7 +71,7 @@
     return cmps.year == 0 && cmps.month == 0 && cmps.day == 1;
 }
 
-/** 转换时间为本地时区 */
+/** 转换时区本地时区 */
 + (NSDate *)systemTimeZoneWithDate:(NSDate *)date
 {
     NSTimeZone *zone = [NSTimeZone systemTimeZone];

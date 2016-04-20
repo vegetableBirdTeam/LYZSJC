@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SQComment.h"
 
 @interface SQTopic : NSObject
 
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 名称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像的URL */
@@ -32,6 +35,8 @@
 @property (nonatomic, assign) NSInteger width;
 /** 图片的高度 */
 @property (nonatomic, assign) NSInteger height;
+/** 最热评论 */
+@property (nonatomic, strong) SQComment *top_cmt;
 /** 小图片的URL */
 @property (nonatomic, copy) NSString *small_image;
 /** 中图片的URL */

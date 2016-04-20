@@ -32,4 +32,4 @@ NSString * const SQUserSexMale = @"m";
 NSString * const SQUserSexFemale = @"f";
 
 /** 精华-cell-最热评论标题的高度 */
-CGFloat const SQTopicCellTopicmtTitleH = 20;
+CGFloat const SQTopicCellTopCmtTitleH = 20;

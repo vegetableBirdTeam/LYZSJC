@@ -9,6 +9,7 @@
 #import "SQTopicTableViewController.h"
 #import "SQTopicCell.h"
 #import "SQTopic.h"
+#import "SQCommentViewController.h"
 
 #import <AFNetworking.h>
 #import <MJRefresh.h>
@@ -186,6 +187,8 @@ static NSString * const SQTopicCellID = @"topicCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SQTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:SQTopicCellID];
     cell.topic = self.topics[indexPath.row];
+    // 取消Selection效果
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -196,6 +199,12 @@ static NSString * const SQTopicCellID = @"topicCell";
     
     // 返回这个模型对应的cell高度
     return topic.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    SQCommentViewController *commentVC = [[SQCommentViewController alloc] init];
+    commentVC.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVC animated:YES];
 }
 
 @end

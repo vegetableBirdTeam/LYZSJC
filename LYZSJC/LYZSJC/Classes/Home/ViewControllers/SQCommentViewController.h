@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class SQTopic;
+#import "SQTopic.h"
 
 @interface SQCommentViewController : UIViewController
 

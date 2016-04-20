@@ -12,12 +12,21 @@
 
 @interface SQCommentCell ()
 
+/** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+/** 性别 */
 @property (weak, nonatomic) IBOutlet UIImageView *sexView;
+/** 评论内容 */
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+/** 用户名 */
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+/** 点赞数 */
 @property (weak, nonatomic) IBOutlet UILabel *likeCountLabel;
+/** 音频按钮 */
 @property (weak, nonatomic) IBOutlet UIButton *voiceButton;
+/** 评论时间 */
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+
 
 @end
 
@@ -48,12 +57,14 @@
     self.usernameLabel.text = comment.user.username;
     self.likeCountLabel.text = [NSString stringWithFormat:@"%zd", comment.like_count];
     
-    if (comment.voiceuri) {
+    if (!comment.voiceuri) {
         self.voiceButton.hidden = NO;
         [self.voiceButton setTitle:[NSString stringWithFormat:@"%zd''", comment.voicetime] forState:UIControlStateNormal];
     } else {
         self.voiceButton.hidden = YES;
     }
+    
+    self.timeLabel.text = @"几分钟前";
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

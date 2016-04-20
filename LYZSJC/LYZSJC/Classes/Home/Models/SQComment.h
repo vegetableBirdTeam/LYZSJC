@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class SQUser;
+#import "SQUser.h"
 
 @interface SQComment : NSObject
 

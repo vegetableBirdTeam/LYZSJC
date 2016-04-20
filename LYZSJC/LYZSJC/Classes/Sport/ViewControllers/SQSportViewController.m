@@ -27,7 +27,6 @@
 
 @end
 
-
 static NSString * const SQSportID = @"sport";
 
 @implementation SQSportViewController

@@ -257,6 +257,13 @@
     [self titleClick:self.titlesView.subviews[index]];
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    for (UITableViewController *tableVC in self.childViewControllers) {
+        [tableVC.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

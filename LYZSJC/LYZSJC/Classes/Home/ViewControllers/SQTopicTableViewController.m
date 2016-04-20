@@ -7,9 +7,12 @@
 //
 
 #import "SQTopicTableViewController.h"
+#import "SQTopicCell.h"
+#import "SQTopic.h"
 
 #import <AFNetworking.h>
 #import <MJRefresh.h>
+#import <MJExtension.h>
 
 @interface SQTopicTableViewController ()
 
@@ -24,6 +27,8 @@
 
 @end
 
+static NSString * const SQTopicCellID = @"topicCell";
+
 @implementation SQTopicTableViewController
 
 - (NSMutableArray *)topics {
@@ -35,9 +40,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // 设置导航栏内容
-    self.navigationItem.title = @"瞧瞧";
     
     //  设置背景色
     self.view.backgroundColor = SQGlobalBkg;
@@ -55,17 +57,16 @@
 - (void)setupTableView {
     // 设置内边距
     CGFloat bottom = self.tabBarController.tabBar.height;
-    CGFloat top = SQTitlesViewY + SQTitlesViewH;
+    CGFloat top = SQTitlesViewY - 20;
     self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     
     // 设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
-    self.tableView.backgroundColor = [UIColor clearColor];
     
     // 注册
-    //    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SQTopicCell class]) bundle:nil] forCellReuseIdentifier:SQTopicCellID];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SQTopicCell class]) bundle:nil] forCellReuseIdentifier:SQTopicCellID];
 }
 
 /**
@@ -110,7 +111,7 @@
         self.maxtime = responseObject[@"info"][@"maxtime"];
         
         // 字典 -> 模型
-//        self.topics = [SQTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        self.topics = [SQTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -156,8 +157,8 @@
         self.maxtime = responseObject[@"info"][@"maxtime"];
         
         // 字典 -> 模型
-//        NSArray *newTopics = [SQTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-//        [self.topics addObjectsFromArray:newTopics];
+        NSArray *newTopics = [SQTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.topics addObjectsFromArray:newTopics];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -182,19 +183,19 @@
     return self.topics.count;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    SQTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:SQTopicCellID];
-//    cell.topic = self.topics[indexPath.row];
-//    return cell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SQTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:SQTopicCellID];
+    cell.topic = self.topics[indexPath.row];
+    return cell;
+}
 
 #pragma mark -代理方法
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-//    // 取出帖子模型
-//    SQTopic *topic = self.topics[indexPath.row];
-//    
-//    // 返回这个模型对应的cell高度
-//    return topic.cellHeight;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    // 取出帖子模型
+    SQTopic *topic = self.topics[indexPath.row];
+    
+    // 返回这个模型对应的cell高度
+    return topic.cellHeight;
+}
 
 @end

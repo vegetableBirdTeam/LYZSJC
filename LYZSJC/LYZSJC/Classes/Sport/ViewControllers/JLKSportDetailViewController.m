@@ -8,7 +8,7 @@
 
 #import "JLKSportDetailViewController.h"
 
-@interface JLKSportDetailViewController () 
+@interface JLKSportDetailViewController ()  <UIWebViewDelegate>
 
 
 @end
@@ -18,6 +18,7 @@
 - (void)loadView
 {
     UIWebView *webView = [[UIWebView alloc] init];
+    webView.delegate = self;
     self.view = webView;
 }
 
@@ -37,6 +38,15 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     UIWebView *webView = (UIWebView *)self.view;
     [webView loadRequest:request];
+}
+
+#pragma mark - WebView Delegate -
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName('foot_joy')[0].style.display = 'NONE'"];
+    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName('margin_content')[0].style.display = 'NONE'"];
+    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName('display_in a_buttom')[0].style.display = 'NONE'"];
+    [webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName('margin_buttom')[0].style.display = 'NONE'"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,7 +1,12 @@
+source "https://gitcafe.com/akuandev/Specs.git"
 platform :ios, "7.0"
 
-pod "AFNetworking"
-pod "MJRefresh"
-pod "SDWebImage"
-pod "SVProgressHUD"
-pod "MJExtension"
+target "LYZSJC" do
+    pod "AFNetworking"
+    pod "MJRefresh"
+    pod "SDWebImage"
+    pod "SVProgressHUD"
+    pod "MJExtension"
+    pod "DACircularProgress"
+end
+

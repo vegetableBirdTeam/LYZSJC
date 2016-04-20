@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SQHomeViewController : UITableViewController
+@interface SQHomeViewController : UIViewController
 
 @end

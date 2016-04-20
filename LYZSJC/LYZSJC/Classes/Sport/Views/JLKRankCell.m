@@ -10,9 +10,9 @@
 
 @implementation JLKRankCell
 
-- (instancetype)init
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    if (self = [super init]) {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.rankLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_rankLabel];
         
@@ -28,23 +28,21 @@
 - (void)setModel:(JLKRankModel *)model
 {
     self.rankLabel.text = [NSString stringWithFormat:@"%ld", self.rank];
-    if (_rank == 0) {
-        self.rankLabel.font = [UIFont boldSystemFontOfSize:30];
-    } else if (_rank == 1) {
-        self.rankLabel.font = [UIFont boldSystemFontOfSize:25];
-    } else if (_rank == 2) {
-        self.rankLabel.font = [UIFont boldSystemFontOfSize:20];
-    }
+    self.rankLabel.textAlignment = NSTextAlignmentLeft;
+    self.rankLabel.font = [UIFont boldSystemFontOfSize:20];
     
     NSURL *url = [NSURL URLWithString:model.iconUrl];
     [self.iconImageView sd_setImageWithURL:url];
     
     self.usernameLabel.text = model.username;
     self.usernameLabel.font = _rankLabel.font;
+    self.usernameLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
+    
     [self layoutWithRank:_rank];
     
     _rankLabel.x = 10;
@@ -76,36 +74,37 @@
 {
     CGFloat first = 100;
     CGFloat second = 80;
-    CGFloat third = 60;
-    CGFloat other = 50;
+    CGFloat third = 70;
+    CGFloat other = 60;
+    
     if (rank == 0) {
-        _rankLabel.width = first;
+        _rankLabel.width = first / 2;
         _rankLabel.height = first;
         _iconImageView.width = first;
         _iconImageView.height = first;
-        _usernameLabel.width = first;
+        _usernameLabel.width = SCREENW - first * 3 / 2 - 40;
         _usernameLabel.height = first;
     } else if (rank == 1) {
-        _rankLabel.width = second;
-        _usernameLabel.height = second;
-        _usernameLabel.width = second;
+        _rankLabel.width = second / 2;
         _rankLabel.height = second;
         _iconImageView.width = second;
         _iconImageView.height = second;
+        _usernameLabel.width = SCREENW - second * 3 / 2 - 40;
+        _usernameLabel.height = second;
     } else if (rank == 2) {
-        _usernameLabel.width = third;
-        _usernameLabel.height = third;
-        _rankLabel.width = third;
+        _rankLabel.width = third / 2;
         _rankLabel.height = third;
         _iconImageView.width = third;
         _iconImageView.height = third;
+        _usernameLabel.width = SCREENW - third * 3 / 2 - 40;
+        _usernameLabel.height = third;
     } else {
-        _usernameLabel.width = other;
-        _usernameLabel.height = other;
-        _rankLabel.width = other;
+        _rankLabel.width = other / 2;
         _rankLabel.height = other;
         _iconImageView.width = other;
         _iconImageView.height = other;
+        _usernameLabel.width = SCREENW - other * 3 / 2 - 40;
+        _usernameLabel.height = other;
     }
 }
 

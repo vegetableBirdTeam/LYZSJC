@@ -9,6 +9,9 @@
 #ifndef JLKURLHeader_h
 #define JLKURLHeader_h
 
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+
 #define SPORTURL @"http://media.api.thejoyrun.com/article-list-v1"
 
 #endif /* JLKURLHeader_h */

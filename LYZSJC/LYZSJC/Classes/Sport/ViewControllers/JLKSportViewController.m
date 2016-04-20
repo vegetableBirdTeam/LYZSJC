@@ -8,6 +8,7 @@
 
 #import "JLKSportViewController.h"
 #import "SQSportViewController.h"
+#import "JLKSportRankListViewController.h"
 
 #import "JLKPedometer.h"
 
@@ -150,7 +151,8 @@
  */
 - (void)pushRankList
 {
-    
+    JLKSportRankListViewController *rankVC = [[JLKSportRankListViewController alloc] init];
+    [self.navigationController pushViewController:rankVC animated:YES];
 }
 
 /**

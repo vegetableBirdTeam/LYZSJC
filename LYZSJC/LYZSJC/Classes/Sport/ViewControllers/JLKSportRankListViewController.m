@@ -26,6 +26,7 @@
             JLKRankModel *model = [[JLKRankModel alloc] init];
             model.iconUrl = @"http://p2.wmpic.me/article/2015/03/16/1426483393_DXGAJIiR.jpeg";
             model.username = @"我帅吗?";
+            [_rankListArray addObject:model];
         }
     }
     
@@ -43,13 +44,14 @@
  */
 - (void)createTableView
 {
-    CGRect frame = [UIScreen mainScreen].bounds;
-    UITableView *rankListView = [[UITableView alloc] initWithFrame:CGRectMake(0, SQTitlesViewY, frame.size.width, frame.size.height - SQTitlesViewY) style:UITableViewStylePlain];
-    rankListView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    UITableView *rankListView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    //rankListView.separatorStyle = UITableViewCellSeparatorStyleNone;
     rankListView.delegate = self;
     rankListView.dataSource = self;
     
     [rankListView registerClass:[JLKRankCell class] forCellReuseIdentifier:@"JLKRankCell"];
+    
+    [self.view addSubview:rankListView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,7 +62,7 @@
 #pragma mark - TableView Delegate & DataSource -
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return self.rankListArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,8 +73,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     JLKRankCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JLKRankCell"];
+    //if (!cell) {
+    //    cell = [[JLKRankCell alloc] init];
+    //}
+    cell.rank = indexPath.row + 1;
     cell.model = self.rankListArray[indexPath.row];
-    cell.rank = indexPath.row;
+    cell.userInteractionEnabled = NO;
     
     return cell;
 }

@@ -11,14 +11,15 @@
 @implementation SQTopic
 {
     CGFloat _cellHeight;
-    CGRect _pictureF;
 }
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
     return @{
              @"small_image" : @"image0",
              @"middle_image" : @"image2",
-             @"large_image" : @"image1"
+             @"large_image" : @"image1",
+             @"ID" : @"id",
+             @"top_cmt" : @"top_cmt[0]"
              };
 }
 
@@ -97,6 +98,13 @@
             _videoF = CGRectMake(videoX, videoY, videoW, videoH);
             
             _cellHeight += videoH + SQTopicCellMargin;
+        }
+        
+        // 如果有最热评论
+        if (self.top_cmt) {
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", self.top_cmt.user.username, self.top_cmt.content];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+            _cellHeight += SQTopicCellTopCmtTitleH + contentH + SQTopicCellMargin;
         }
         
         // 底部工具条的高度

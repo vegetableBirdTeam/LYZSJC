@@ -49,4 +49,4 @@ UIKIT_EXTERN NSString * const SQUserSexMale;
 UIKIT_EXTERN NSString * const SQUserSexFemale;
 
 /** 精华-cell-最热评论标题的高度 */
-UIKIT_EXTERN CGFloat const SQTopicCellTopicmtTitleH;
+UIKIT_EXTERN CGFloat const SQTopicCellTopCmtTitleH;

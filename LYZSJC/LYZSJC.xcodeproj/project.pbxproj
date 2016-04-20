@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790109111CC79D0500BF6F99 /* JLKSportRankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */; };
+		790109151CC7A23100BF6F99 /* JLKRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109131CC7A23100BF6F99 /* JLKRankCell.m */; };
+		790109191CC7A47700BF6F99 /* JLKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109181CC7A47700BF6F99 /* JLKRankModel.m */; };
 		79B7EB6E1CC72EC60065487A /* YGCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */; };
 		79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5C1CC72EC60065487A /* YGJobTableModel.m */; };
 		79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5F1CC72EC60065487A /* SQJobViewController.m */; };
@@ -93,6 +96,12 @@
 
 /* Begin PBXFileReference section */
 		2B76B8353D53D25BE8C3F186 /* libPods-LYZSJC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYZSJC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7901090F1CC79D0500BF6F99 /* JLKSportRankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportRankListViewController.h; sourceTree = "<group>"; };
+		790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportRankListViewController.m; sourceTree = "<group>"; };
+		790109121CC7A23100BF6F99 /* JLKRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankCell.h; sourceTree = "<group>"; };
+		790109131CC7A23100BF6F99 /* JLKRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankCell.m; sourceTree = "<group>"; };
+		790109171CC7A47700BF6F99 /* JLKRankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankModel.h; sourceTree = "<group>"; };
+		790109181CC7A47700BF6F99 /* JLKRankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankModel.m; sourceTree = "<group>"; };
 		79B7EB591CC72EC60065487A /* YGCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryModel.h; sourceTree = "<group>"; };
 		79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryModel.m; sourceTree = "<group>"; };
 		79B7EB5B1CC72EC60065487A /* YGJobTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableModel.h; sourceTree = "<group>"; };
@@ -385,6 +394,8 @@
 			children = (
 				79D5F6371CC6855C0086B56F /* JLKSportModel.h */,
 				79D5F6381CC6855C0086B56F /* JLKSportModel.m */,
+				790109171CC7A47700BF6F99 /* JLKRankModel.h */,
+				790109181CC7A47700BF6F99 /* JLKRankModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +409,8 @@
 				79D5F63D1CC6855C0086B56F /* JLKSportViewController.m */,
 				79D5F63E1CC6855C0086B56F /* SQSportViewController.h */,
 				79D5F63F1CC6855C0086B56F /* SQSportViewController.m */,
+				7901090F1CC79D0500BF6F99 /* JLKSportRankListViewController.h */,
+				790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -408,6 +421,8 @@
 				79D5F6411CC6855C0086B56F /* SQSportCell.h */,
 				79D5F6421CC6855C0086B56F /* SQSportCell.m */,
 				79D5F6431CC6855C0086B56F /* SQSportCell.xib */,
+				790109121CC7A23100BF6F99 /* JLKRankCell.h */,
+				790109131CC7A23100BF6F99 /* JLKRankCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -693,7 +708,7 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = SQ;
+				CLASSPREFIX = JLK;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JLK;
 				TargetAttributes = {
@@ -846,11 +861,13 @@
 				79D5F6241CC6816A0086B56F /* SQHomeMenuViewController.m in Sources */,
 				B1453C5D1CC076F300207EE4 /* SQTabBar.m in Sources */,
 				79D5F6311CC6816A0086B56F /* SQTopicVideoView.m in Sources */,
+				790109111CC79D0500BF6F99 /* JLKSportRankListViewController.m in Sources */,
 				79D5F62F1CC6816A0086B56F /* SQTopicPictureView.m in Sources */,
 				B1453C3C1CBFDAEF00207EE4 /* main.m in Sources */,
 				B1453C5A1CBFE1B700207EE4 /* SQNavigationController.m in Sources */,
 				B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */,
 				B1453C561CBFDF1E00207EE4 /* SQMeViewController.m in Sources */,
+				790109151CC7A23100BF6F99 /* JLKRankCell.m in Sources */,
 				79D5F6461CC6855C0086B56F /* JLKSportViewController.m in Sources */,
 				79D5F6201CC6816A0086B56F /* SQTopic.m in Sources */,
 				B1453C401CBFDE7800207EE4 /* SQTabBarController.m in Sources */,
@@ -865,6 +882,7 @@
 				79B7EB761CC72EC60065487A /* YGJobDetailHeaderView.m in Sources */,
 				79D5F6331CC6816A0086B56F /* SQTopicVoiceView.m in Sources */,
 				B196BF1D1CC4E1340097A56F /* SQAddViewController.m in Sources */,
+				790109191CC7A47700BF6F99 /* JLKRankModel.m in Sources */,
 				79D5F61F1CC6816A0086B56F /* SQComment.m in Sources */,
 				79B7EB721CC72EC60065487A /* YGJobDetailViewController.m in Sources */,
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,

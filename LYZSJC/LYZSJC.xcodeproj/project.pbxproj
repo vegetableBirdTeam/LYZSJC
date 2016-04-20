@@ -52,6 +52,8 @@
 		79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F63F1CC6855C0086B56F /* SQSportViewController.m */; };
 		79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F6421CC6855C0086B56F /* SQSportCell.m */; };
 		79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D5F6431CC6855C0086B56F /* SQSportCell.xib */; };
+		925B68AE1CC75686000F8A33 /* YGJobCommitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */; };
+		925B68AF1CC75686000F8A33 /* YGJobCommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925B68AD1CC75686000F8A33 /* YGJobCommitCell.xib */; };
 		B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC71CA44EA500F0D799 /* Assets.xcassets */; };
 		B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC91CA44EA500F0D799 /* LaunchScreen.storyboard */; };
 		B1178ED61CA44EA500F0D799 /* LYZSJCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1178ED51CA44EA500F0D799 /* LYZSJCTests.m */; };
@@ -175,6 +177,9 @@
 		79D5F6421CC6855C0086B56F /* SQSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportCell.m; sourceTree = "<group>"; };
 		79D5F6431CC6855C0086B56F /* SQSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQSportCell.xib; sourceTree = "<group>"; };
 		841987F277890EB2B7FEBE7D /* Pods-LYZSJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZSJC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYZSJC/Pods-LYZSJC.release.xcconfig"; sourceTree = "<group>"; };
+		925B68AB1CC75686000F8A33 /* YGJobCommitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobCommitCell.h; sourceTree = "<group>"; };
+		925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobCommitCell.m; sourceTree = "<group>"; };
+		925B68AD1CC75686000F8A33 /* YGJobCommitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobCommitCell.xib; sourceTree = "<group>"; };
 		A734CEA28492A35C32F3D316 /* Pods-LYZSJC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZSJC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYZSJC/Pods-LYZSJC.debug.xcconfig"; sourceTree = "<group>"; };
 		B1178EB81CA44EA400F0D799 /* LYZSJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYZSJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1178EC71CA44EA500F0D799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -303,6 +308,9 @@
 				79B7EB6B1CC72EC60065487A /* YGJobTableViewCell.h */,
 				79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */,
 				79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */,
+				925B68AB1CC75686000F8A33 /* YGJobCommitCell.h */,
+				925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */,
+				925B68AD1CC75686000F8A33 /* YGJobCommitCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -708,9 +716,9 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = JLK;
+				CLASSPREFIX = YG;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = JLK;
+				ORGANIZATIONNAME = YG;
 				TargetAttributes = {
 					B1178EB71CA44EA400F0D799 = {
 						CreatedOnToolsVersion = 7.2;
@@ -766,6 +774,7 @@
 				79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */,
 				B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */,
 				79D5F62E1CC6816A0086B56F /* SQTopicCell.xib in Resources */,
+				925B68AF1CC75686000F8A33 /* YGJobCommitCell.xib in Resources */,
 				79B7EB751CC72EC60065487A /* YGCategoryTableViewCell.xib in Resources */,
 				B15FC3F91CC756100093516E /* SQCommentCell.xib in Resources */,
 				79D5F6321CC6816A0086B56F /* SQTopicVideoView.xib in Resources */,
@@ -877,6 +886,7 @@
 				79D5F6211CC6816A0086B56F /* SQUser.m in Sources */,
 				79D5F62D1CC6816A0086B56F /* SQTopicCell.m in Sources */,
 				79D5F62A1CC6816A0086B56F /* SQDropdownView.m in Sources */,
+				925B68AE1CC75686000F8A33 /* YGJobCommitCell.m in Sources */,
 				79D5F6281CC6816A0086B56F /* SQTopicTableViewController.m in Sources */,
 				79D5F62B1CC6816A0086B56F /* SQHomeTitleButton.m in Sources */,
 				79B7EB761CC72EC60065487A /* YGJobDetailHeaderView.m in Sources */,

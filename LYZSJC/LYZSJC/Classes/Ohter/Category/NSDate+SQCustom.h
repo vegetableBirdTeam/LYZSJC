@@ -15,8 +15,6 @@
 */
 - (NSDateComponents *)deltaFrom:(NSDate *)from;
 
-
-
 /**
  *  是否为今年
  */
@@ -31,5 +29,7 @@
  *  是否为昨天
  */
 - (BOOL)isYesterday;
+
++ (NSDate *)systemTimeZoneWithDate:(NSDate *)date;
 
 @end

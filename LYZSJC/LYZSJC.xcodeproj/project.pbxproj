@@ -19,7 +19,6 @@
 		79B7EB771CC72EC60065487A /* YGJobDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6A1CC72EC60065487A /* YGJobDetailHeaderView.xib */; };
 		79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */; };
 		79B7EB791CC72EC60065487A /* YGJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */; };
-		79D5F5E81CC631580086B56F /* NSDate+SystemTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */; };
 		79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5EA1CC631650086B56F /* JLKPedometer.m */; };
 		79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5F31CC681220086B56F /* SQTopWindow.m */; };
 		79D5F61F1CC6816A0086B56F /* SQComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5F81CC6816A0086B56F /* SQComment.m */; };
@@ -64,6 +63,10 @@
 		B1453C611CC07BD100207EE4 /* UIView+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C601CC07BD100207EE4 /* UIView+SQCustom.m */; };
 		B1453C631CC0BF9D00207EE4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C621CC0BF9D00207EE4 /* Foundation+Log.m */; };
 		B1453C661CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C651CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m */; };
+		B15FC3F81CC756100093516E /* SQCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15FC3F61CC756100093516E /* SQCommentCell.m */; };
+		B15FC3F91CC756100093516E /* SQCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15FC3F71CC756100093516E /* SQCommentCell.xib */; };
+		B15FC3FC1CC757240093516E /* UIImageView+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B15FC3FB1CC757240093516E /* UIImageView+SQCustom.m */; };
+		B15FC3FF1CC757990093516E /* UIImage+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B15FC3FE1CC757990093516E /* UIImage+SQCustom.m */; };
 		B196BF1D1CC4E1340097A56F /* SQAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF191CC4E1340097A56F /* SQAddViewController.m */; };
 		B196BF1E1CC4E1340097A56F /* SQAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF1C1CC4E1340097A56F /* SQAddView.m */; };
 		B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF231CC517AF0097A56F /* NSDate+SQCustom.m */; };
@@ -109,8 +112,6 @@
 		79B7EB6B1CC72EC60065487A /* YGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableViewCell.h; sourceTree = "<group>"; };
 		79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableViewCell.m; sourceTree = "<group>"; };
 		79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobTableViewCell.xib; sourceTree = "<group>"; };
-		79D5F5E61CC631580086B56F /* NSDate+SystemTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SystemTimeZone.h"; sourceTree = "<group>"; };
-		79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SystemTimeZone.m"; sourceTree = "<group>"; };
 		79D5F5E91CC631650086B56F /* JLKPedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKPedometer.h; sourceTree = "<group>"; };
 		79D5F5EA1CC631650086B56F /* JLKPedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKPedometer.m; sourceTree = "<group>"; };
 		79D5F5F21CC681220086B56F /* SQTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTopWindow.h; sourceTree = "<group>"; };
@@ -194,6 +195,13 @@
 		B1453C621CC0BF9D00207EE4 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		B1453C641CC0C06500207EE4 /* UIBarButtonItem+SQCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SQCustom.h"; sourceTree = "<group>"; };
 		B1453C651CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SQCustom.m"; sourceTree = "<group>"; };
+		B15FC3F51CC756100093516E /* SQCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQCommentCell.h; sourceTree = "<group>"; };
+		B15FC3F61CC756100093516E /* SQCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQCommentCell.m; sourceTree = "<group>"; };
+		B15FC3F71CC756100093516E /* SQCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQCommentCell.xib; sourceTree = "<group>"; };
+		B15FC3FA1CC757240093516E /* UIImageView+SQCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SQCustom.h"; sourceTree = "<group>"; };
+		B15FC3FB1CC757240093516E /* UIImageView+SQCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SQCustom.m"; sourceTree = "<group>"; };
+		B15FC3FD1CC757990093516E /* UIImage+SQCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SQCustom.h"; sourceTree = "<group>"; };
+		B15FC3FE1CC757990093516E /* UIImage+SQCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SQCustom.m"; sourceTree = "<group>"; };
 		B196BF181CC4E1340097A56F /* SQAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddViewController.h; sourceTree = "<group>"; };
 		B196BF191CC4E1340097A56F /* SQAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAddViewController.m; sourceTree = "<group>"; };
 		B196BF1B1CC4E1340097A56F /* SQAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddView.h; sourceTree = "<group>"; };
@@ -335,8 +343,6 @@
 		79D5F60A1CC6816A0086B56F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				79D5F60B1CC6816A0086B56F /* SQCommentHeaderView.h */,
-				79D5F60C1CC6816A0086B56F /* SQCommentHeaderView.m */,
 				79D5F60D1CC6816A0086B56F /* SQDropdownView.h */,
 				79D5F60E1CC6816A0086B56F /* SQDropdownView.m */,
 				79D5F60F1CC6816A0086B56F /* SQHomeTitleButton.h */,
@@ -355,6 +361,11 @@
 				79D5F61C1CC6816A0086B56F /* SQTopicVoiceView.h */,
 				79D5F61D1CC6816A0086B56F /* SQTopicVoiceView.m */,
 				79D5F61E1CC6816A0086B56F /* SQTopicVoiceView.xib */,
+				79D5F60B1CC6816A0086B56F /* SQCommentHeaderView.h */,
+				79D5F60C1CC6816A0086B56F /* SQCommentHeaderView.m */,
+				B15FC3F51CC756100093516E /* SQCommentCell.h */,
+				B15FC3F61CC756100093516E /* SQCommentCell.m */,
+				B15FC3F71CC756100093516E /* SQCommentCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -560,14 +571,16 @@
 		B1453C3D1CBFDB9C00207EE4 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				79D5F5E61CC631580086B56F /* NSDate+SystemTimeZone.h */,
-				79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */,
 				B1453C5F1CC07BD100207EE4 /* UIView+SQCustom.h */,
 				B1453C601CC07BD100207EE4 /* UIView+SQCustom.m */,
 				B1453C641CC0C06500207EE4 /* UIBarButtonItem+SQCustom.h */,
 				B1453C651CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m */,
 				B196BF221CC517AF0097A56F /* NSDate+SQCustom.h */,
 				B196BF231CC517AF0097A56F /* NSDate+SQCustom.m */,
+				B15FC3FA1CC757240093516E /* UIImageView+SQCustom.h */,
+				B15FC3FB1CC757240093516E /* UIImageView+SQCustom.m */,
+				B15FC3FD1CC757990093516E /* UIImage+SQCustom.h */,
+				B15FC3FE1CC757990093516E /* UIImage+SQCustom.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -680,7 +693,7 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = JLK;
+				CLASSPREFIX = SQ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JLK;
 				TargetAttributes = {
@@ -739,6 +752,7 @@
 				B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */,
 				79D5F62E1CC6816A0086B56F /* SQTopicCell.xib in Resources */,
 				79B7EB751CC72EC60065487A /* YGCategoryTableViewCell.xib in Resources */,
+				B15FC3F91CC756100093516E /* SQCommentCell.xib in Resources */,
 				79D5F6321CC6816A0086B56F /* SQTopicVideoView.xib in Resources */,
 				79B7EB731CC72EC60065487A /* YGJobDetailViewController.xib in Resources */,
 				B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */,
@@ -818,6 +832,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */,
+				B15FC3F81CC756100093516E /* SQCommentCell.m in Sources */,
+				B15FC3FC1CC757240093516E /* UIImageView+SQCustom.m in Sources */,
 				79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */,
 				79D5F6441CC6855C0086B56F /* JLKSportModel.m in Sources */,
 				79D5F6221CC6816A0086B56F /* SQCommentViewController.m in Sources */,
@@ -853,11 +869,11 @@
 				79B7EB721CC72EC60065487A /* YGJobDetailViewController.m in Sources */,
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,
 				79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */,
+				B15FC3FF1CC757990093516E /* UIImage+SQCustom.m in Sources */,
 				79D5F6291CC6816A0086B56F /* SQCommentHeaderView.m in Sources */,
 				79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */,
 				79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */,
 				79D5F62C1CC6816A0086B56F /* SQProgressView.m in Sources */,
-				79D5F5E81CC631580086B56F /* NSDate+SystemTimeZone.m in Sources */,
 				79D5F6251CC6816A0086B56F /* SQHomeViewController.m in Sources */,
 				B196BF1E1CC4E1340097A56F /* SQAddView.m in Sources */,
 				B1453C631CC0BF9D00207EE4 /* Foundation+Log.m in Sources */,

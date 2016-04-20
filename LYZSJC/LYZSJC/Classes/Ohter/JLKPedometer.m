@@ -7,7 +7,6 @@
 //
 
 #import "JLKPedometer.h"
-#import "NSDate+SystemTimeZone.h"
 
 /** 不要问我为什么, 不定义全局就会出错 */
 static CMPedometer *pedometer = nil;

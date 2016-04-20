@@ -30,6 +30,7 @@
  */
 - (BOOL)isYesterday;
 
+/** 转换时区本地时区 */
 + (NSDate *)systemTimeZoneWithDate:(NSDate *)date;
 
 @end

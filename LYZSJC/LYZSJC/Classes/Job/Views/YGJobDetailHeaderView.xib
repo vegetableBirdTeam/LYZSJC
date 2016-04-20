@@ -56,19 +56,29 @@
                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ9-EF-QKa">
+                    <rect key="frame" x="10" y="550" width="580" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Xgc-er-1VA"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KXP-MD-4rM" firstAttribute="top" secondItem="E9j-D8-hAg" secondAttribute="top" id="5rM-Dc-uN7"/>
+                <constraint firstAttribute="trailing" secondItem="JJ9-EF-QKa" secondAttribute="trailing" constant="10" id="6I0-Qs-rzs"/>
                 <constraint firstItem="KXP-MD-4rM" firstAttribute="leading" secondItem="E9j-D8-hAg" secondAttribute="trailing" constant="10" id="BNt-Bp-8hj"/>
                 <constraint firstAttribute="trailing" secondItem="aMf-Gi-jGt" secondAttribute="trailing" constant="10" id="HB5-k9-VPT"/>
                 <constraint firstItem="CpE-7v-WhH" firstAttribute="top" secondItem="KXP-MD-4rM" secondAttribute="bottom" constant="5" id="NJW-tt-YE2"/>
                 <constraint firstItem="E9j-D8-hAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="NZK-59-SXe"/>
+                <constraint firstAttribute="bottom" secondItem="JJ9-EF-QKa" secondAttribute="bottom" constant="10" id="Ng9-N9-FY1"/>
                 <constraint firstItem="CpE-7v-WhH" firstAttribute="leading" secondItem="KXP-MD-4rM" secondAttribute="leading" id="QhZ-x1-TfF"/>
                 <constraint firstItem="E9j-D8-hAg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TJK-2b-tKz"/>
                 <constraint firstItem="aMf-Gi-jGt" firstAttribute="top" secondItem="CpE-7v-WhH" secondAttribute="bottom" constant="10" id="XZr-82-R0e"/>
                 <constraint firstAttribute="trailing" secondItem="BRJ-So-dHW" secondAttribute="trailing" constant="10" id="e4n-NH-DGL"/>
                 <constraint firstItem="aMf-Gi-jGt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="eQo-tV-8ZQ"/>
+                <constraint firstItem="JJ9-EF-QKa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="m4V-wD-RWh"/>
                 <constraint firstItem="BRJ-So-dHW" firstAttribute="top" secondItem="KXP-MD-4rM" secondAttribute="top" id="sIl-KS-Rrl"/>
             </constraints>
             <connections>

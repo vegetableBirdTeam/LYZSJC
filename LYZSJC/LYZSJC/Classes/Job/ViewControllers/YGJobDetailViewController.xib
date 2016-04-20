@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YGJobDetailViewController">
             <connections>
+                <outlet property="bottomSapce" destination="fri-uB-sNc" id="HCL-dq-uLf"/>
                 <outlet property="tableView" destination="2EK-PQ-9HU" id="Qap-Ke-K2q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,21 +18,57 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2EK-PQ-9HU">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="rue-Fb-07L"/>
                         <outlet property="delegate" destination="-1" id="Juj-D5-ALo"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-F4-Tm8">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9h-Gw-GzZ">
+                            <rect key="frame" x="5" y="5" width="551" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-P7-d65">
+                            <rect key="frame" x="561" y="5" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="Bgc-ou-6fm"/>
+                            </constraints>
+                            <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="艾特"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="H9h-Gw-GzZ" firstAttribute="top" secondItem="hWQ-F4-Tm8" secondAttribute="top" constant="5" id="15G-HC-FPh"/>
+                        <constraint firstAttribute="trailing" secondItem="9DT-P7-d65" secondAttribute="trailing" constant="5" id="HPs-yy-hZO"/>
+                        <constraint firstItem="9DT-P7-d65" firstAttribute="top" secondItem="hWQ-F4-Tm8" secondAttribute="top" constant="5" id="PI3-2a-O7P"/>
+                        <constraint firstAttribute="bottom" secondItem="9DT-P7-d65" secondAttribute="bottom" constant="5" id="USG-c4-acS"/>
+                        <constraint firstAttribute="height" constant="44" id="sq9-xN-7QK"/>
+                        <constraint firstAttribute="bottom" secondItem="H9h-Gw-GzZ" secondAttribute="bottom" constant="5" id="vtI-Dx-kea"/>
+                        <constraint firstItem="9DT-P7-d65" firstAttribute="leading" secondItem="H9h-Gw-GzZ" secondAttribute="trailing" constant="5" id="xhP-Bb-10Q"/>
+                        <constraint firstItem="H9h-Gw-GzZ" firstAttribute="leading" secondItem="hWQ-F4-Tm8" secondAttribute="leading" constant="5" id="z1Z-CP-Yjv"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="2EK-PQ-9HU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K2v-LB-3Vv"/>
-                <constraint firstItem="2EK-PQ-9HU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MyM-BY-wFW"/>
-                <constraint firstAttribute="trailing" secondItem="2EK-PQ-9HU" secondAttribute="trailing" id="VmV-eb-4cD"/>
-                <constraint firstAttribute="bottom" secondItem="2EK-PQ-9HU" secondAttribute="bottom" id="wKR-ZJ-IaV"/>
+                <constraint firstAttribute="trailing" secondItem="hWQ-F4-Tm8" secondAttribute="trailing" id="3SC-FA-Zln"/>
+                <constraint firstAttribute="trailing" secondItem="2EK-PQ-9HU" secondAttribute="trailing" id="FpJ-oQ-CuT"/>
+                <constraint firstItem="hWQ-F4-Tm8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GX8-ze-YBD"/>
+                <constraint firstItem="2EK-PQ-9HU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iez-wP-0dh"/>
+                <constraint firstItem="2EK-PQ-9HU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ecY-8t-ON7"/>
+                <constraint firstAttribute="bottom" secondItem="hWQ-F4-Tm8" secondAttribute="bottom" id="fri-uB-sNc"/>
+                <constraint firstAttribute="bottom" secondItem="2EK-PQ-9HU" secondAttribute="bottom" constant="44" id="vCt-CJ-rMZ"/>
             </constraints>
+            <point key="canvasLocation" x="475" y="500"/>
         </view>
     </objects>
+    <resources>
+        <image name="艾特" width="34" height="34"/>
+    </resources>
 </document>

@@ -10,6 +10,7 @@
 
 @interface YGCategoryTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *category_name;
+@property (weak, nonatomic) IBOutlet UILabel *category_name; // 分类
+@property (weak, nonatomic) IBOutlet UIImageView *cutLine;   // 分割线
 
 @end

@@ -23,17 +23,17 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-IE-d6I">
-                        <rect key="frame" x="53" y="18" width="385" height="20"/>
+                        <rect key="frame" x="53" y="13" width="385" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="jnt-YD-0ZK"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDd-bo-SeB">
-                        <rect key="frame" x="10" y="48" width="456" height="106.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="10" y="58" width="456" height="96.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -42,27 +42,43 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heS-KZ-nOk">
                                 <rect key="frame" x="0.0" y="0.0" width="158.5" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Z48-Zr-baP"/>
                                 </constraints>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="share:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t7k-kl-8ns"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-qV-Q23">
-                                <rect key="frame" x="158.5" y="0.0" width="159" height="30"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="158" y="0.0" width="159" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="commint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="deb-0p-Lrf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-wF-eyg">
-                                <rect key="frame" x="317.5" y="0.0" width="158.5" height="30"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="317" y="0.0" width="158.5" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="like:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SPZ-p3-mF3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,30 +104,49 @@
                             <constraint firstAttribute="height" constant="1" id="jqU-12-deX"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrc-Xy-AiV">
+                        <rect key="frame" x="53" y="36" width="100" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="bZr-K6-PaO"/>
+                            <constraint firstAttribute="height" constant="12" id="cMe-rH-w60"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="5DS-3H-n5y" secondAttribute="trailing" id="3LK-AR-e0s"/>
                     <constraint firstAttribute="trailing" secondItem="IDd-bo-SeB" secondAttribute="trailing" constant="10" id="66c-pj-MtR"/>
                     <constraint firstItem="5DS-3H-n5y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ILv-0R-eYp"/>
-                    <constraint firstItem="IDd-bo-SeB" firstAttribute="top" secondItem="lSN-IE-d6I" secondAttribute="bottom" constant="10" id="Ni7-Xd-DNX"/>
+                    <constraint firstItem="wrc-Xy-AiV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="MYy-NQ-FVj"/>
                     <constraint firstItem="IDd-bo-SeB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UGf-yP-BBW"/>
                     <constraint firstItem="ciA-oG-a6J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UXA-bo-BzZ"/>
+                    <constraint firstItem="lSN-IE-d6I" firstAttribute="top" secondItem="K67-PO-sPD" secondAttribute="top" id="VKt-EW-ByB"/>
                     <constraint firstItem="K67-PO-sPD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="WA1-2m-JC4"/>
                     <constraint firstItem="5DS-3H-n5y" firstAttribute="top" secondItem="IDd-bo-SeB" secondAttribute="bottom" constant="10" id="YTt-le-GYi"/>
+                    <constraint firstItem="wrc-Xy-AiV" firstAttribute="leading" secondItem="lSN-IE-d6I" secondAttribute="leading" id="Z7X-u7-dzV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="lSN-IE-d6I" secondAttribute="trailing" constant="30" id="arW-Ee-VoJ"/>
                     <constraint firstItem="K67-PO-sPD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="bXs-BM-mQd"/>
                     <constraint firstItem="lSN-IE-d6I" firstAttribute="centerY" secondItem="K67-PO-sPD" secondAttribute="centerY" id="dla-9f-Hpc"/>
                     <constraint firstAttribute="trailing" secondItem="ciA-oG-a6J" secondAttribute="trailing" id="fMp-wW-fWP"/>
                     <constraint firstItem="lSN-IE-d6I" firstAttribute="leading" secondItem="K67-PO-sPD" secondAttribute="trailing" constant="10" id="igt-tj-qHq"/>
                     <constraint firstAttribute="bottom" secondItem="ciA-oG-a6J" secondAttribute="bottom" id="lgP-W7-Wzf"/>
+                    <constraint firstItem="IDd-bo-SeB" firstAttribute="top" secondItem="wrc-Xy-AiV" secondAttribute="bottom" constant="10" id="rvl-e4-4I4"/>
                     <constraint firstItem="ciA-oG-a6J" firstAttribute="top" secondItem="5DS-3H-n5y" secondAttribute="bottom" id="wRV-hV-yS2"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dla-9f-Hpc"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="commit_button" destination="g6M-qV-Q23" id="rl3-cq-g1u"/>
                 <outlet property="commits" destination="IDd-bo-SeB" id="ThF-Km-3cI"/>
                 <outlet property="like_button" destination="UgU-wF-eyg" id="UPE-G3-UvY"/>
                 <outlet property="share_button" destination="heS-KZ-nOk" id="zmn-pf-1EV"/>
+                <outlet property="time_label" destination="wrc-Xy-AiV" id="Gsv-rm-awB"/>
                 <outlet property="user_image" destination="K67-PO-sPD" id="Iqr-JE-RxH"/>
                 <outlet property="user_name" destination="lSN-IE-d6I" id="yaO-Xo-biD"/>
             </connections>

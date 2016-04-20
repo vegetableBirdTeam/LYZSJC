@@ -10,14 +10,19 @@
 
 #import "YGCategoryTableViewCell.h"
 #import "YGJobTableViewCell.h"
+#import "YGJobDetailViewController.h"
+
+#import "MJRefresh.h"
 
 @interface SQJobViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *leftTableView;
-@property (weak, nonatomic) IBOutlet UITableView *rightTableView;
+@property (weak, nonatomic) IBOutlet UITableView *leftTableView;    // 左边列表
+@property (weak, nonatomic) IBOutlet UITableView *rightTableView;   // 右边列表
 
 @property (nonatomic, strong) NSMutableArray *leftCategoryArray;
 @property (nonatomic, strong) NSMutableArray *rightJobArray;
+
+@property (nonatomic, strong) NSString *ceshi; // 测试
 
 @end
 
@@ -55,7 +60,12 @@
     
     // 左侧边栏数据
     [self requestCategory];
+    
+    // 刷新数据
+    [self setupRefresh];
 }
+
+#pragma mark - 初始化控件
 
 // 控件初始化
 - (void)setupTableView
@@ -67,19 +77,64 @@
     
     self.rightTableView.backgroundColor = SQGlobalBkg;
     
+    self.rightTableView.showsVerticalScrollIndicator = NO; // 关闭滚动条
+    
+    self.leftTableView.separatorStyle = NO;
+    
     // 设置inset
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.leftTableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    self.leftTableView.contentInset = UIEdgeInsetsMake(64, 0, 44, 0);
     self.rightTableView.contentInset = self.leftTableView.contentInset;
     // 设置每行的行高
     /**自适应高度*/
+    
     self.rightTableView.rowHeight = UITableViewAutomaticDimension;
     self.rightTableView.estimatedRowHeight = 300;
 }
 
+/**
+ *  添加刷新控件
+ */
+-  (void)setupRefresh {
+    self.rightTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];    // 上拉刷新
+    self.rightTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(refreshFooter)];// 下拉加载
+}
+
+#pragma mark -  请求数据
+
+/**
+ *  请求数据刷新
+ */
 - (void)requestCategory {
     self.leftCategoryArray = [@[@"全部", @"传单派发", @"促销导购", @"话务客服", @"礼仪模特", @"家教助教", @"服务员", @"外卖派送", @"校园代理", @"打包分拣", @"展会协助", @"其他"] mutableCopy];
 }
+
+#pragma mark - 刷新方法
+
+/**
+ *  上拉刷新
+ */
+- (void)refreshHeader {
+    [self.rightTableView.mj_header endRefreshing];
+    
+    [self.rightTableView reloadData];
+}
+
+/**
+ *  下拉加载
+ */
+- (void)refreshFooter {
+    [self.rightTableView.mj_footer endRefreshing];
+}
+
+/**
+ *  时刻监测footer的状态
+ */
+- (void)checkFooterState {
+    
+}
+
+#pragma mark - 数据源方法
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == self.leftTableView) {
@@ -96,6 +151,7 @@
         cell.category_name.text = self.leftCategoryArray[indexPath.row];
         
         return cell;
+        
     } else {
         
         YGJobTableModel *model = [[YGJobTableModel alloc] init];
@@ -107,6 +163,25 @@
         [cell setDataWithModel:model];
         
         return cell;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == self.leftTableView) {
+        
+        [self.rightTableView.mj_header beginRefreshing];
+        
+        [self.rightTableView reloadData];
+    
+    } else {
+        
+        YGJobDetailViewController *jobDetailVC = [[YGJobDetailViewController alloc] init];
+        
+        // 传值
+        //
+        
+        [self.navigationController pushViewController:jobDetailVC animated:YES];
+        
     }
 }
 

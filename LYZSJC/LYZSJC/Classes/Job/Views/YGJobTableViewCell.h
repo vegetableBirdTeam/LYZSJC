@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *share_button;
 @property (weak, nonatomic) IBOutlet UIButton *commit_button;
 @property (weak, nonatomic) IBOutlet UIButton *like_button;
+@property (weak, nonatomic) IBOutlet UILabel *time_label;
 
 - (void)setDataWithModel:(YGJobTableModel *)data;
 

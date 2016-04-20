@@ -18,10 +18,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ghm-91-hPm">
-                    <rect key="frame" x="0.0" y="0.0" width="80" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="80" id="pKQ-Xa-9SC"/>
+                        <constraint firstAttribute="width" constant="75" id="pKQ-Xa-9SC"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="1DI-7k-BlU"/>
@@ -29,7 +29,7 @@
                     </connections>
                 </tableView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-Zy-j9A">
-                    <rect key="frame" x="80" y="0.0" width="520" height="600"/>
+                    <rect key="frame" x="75" y="0.0" width="525" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="eNV-7v-UmR"/>

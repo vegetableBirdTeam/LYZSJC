@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,21 +15,31 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOT-qd-naB">
-                        <rect key="frame" x="8" y="8" width="304" height="27.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <rect key="frame" x="5" y="0.0" width="310" height="37.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-vk-B8Q">
+                        <rect key="frame" x="0.0" y="40" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NI4-Rz-ltB"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="MOT-qd-naB" secondAttribute="trailing" id="1Az-wY-W6d"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="MOT-qd-naB" secondAttribute="bottom" id="UCp-5Y-bIf"/>
-                    <constraint firstItem="MOT-qd-naB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ykf-wb-uqO"/>
-                    <constraint firstItem="MOT-qd-naB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wBd-F2-0Wb"/>
+                    <constraint firstItem="MOT-qd-naB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Lz-dE-Q8W"/>
+                    <constraint firstAttribute="trailing" secondItem="MOT-qd-naB" secondAttribute="trailing" constant="5" id="8gY-Kb-KPC"/>
+                    <constraint firstItem="MOT-qd-naB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="8yO-TW-hDt"/>
+                    <constraint firstAttribute="bottom" secondItem="Ocg-vk-B8Q" secondAttribute="bottom" constant="2.5" id="LZe-3b-4IA"/>
+                    <constraint firstAttribute="trailing" secondItem="Ocg-vk-B8Q" secondAttribute="trailing" id="Lg9-9d-U7R"/>
+                    <constraint firstItem="Ocg-vk-B8Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ULj-hs-HyE"/>
+                    <constraint firstItem="Ocg-vk-B8Q" firstAttribute="top" secondItem="MOT-qd-naB" secondAttribute="bottom" constant="2.5" id="hAi-cX-uqp"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="category_name" destination="MOT-qd-naB" id="acq-Wg-ybE"/>
+                <outlet property="cutLine" destination="Ocg-vk-B8Q" id="bYb-MF-bcN"/>
             </connections>
         </tableViewCell>
     </objects>

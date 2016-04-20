@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79B7EB6E1CC72EC60065487A /* YGCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */; };
+		79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5C1CC72EC60065487A /* YGJobTableModel.m */; };
+		79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5F1CC72EC60065487A /* SQJobViewController.m */; };
+		79B7EB711CC72EC60065487A /* SQJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB601CC72EC60065487A /* SQJobViewController.xib */; };
+		79B7EB721CC72EC60065487A /* YGJobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB621CC72EC60065487A /* YGJobDetailViewController.m */; };
+		79B7EB731CC72EC60065487A /* YGJobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB631CC72EC60065487A /* YGJobDetailViewController.xib */; };
+		79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB661CC72EC60065487A /* YGCategoryTableViewCell.m */; };
+		79B7EB751CC72EC60065487A /* YGCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB671CC72EC60065487A /* YGCategoryTableViewCell.xib */; };
+		79B7EB761CC72EC60065487A /* YGJobDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB691CC72EC60065487A /* YGJobDetailHeaderView.m */; };
+		79B7EB771CC72EC60065487A /* YGJobDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6A1CC72EC60065487A /* YGJobDetailHeaderView.xib */; };
+		79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */; };
+		79B7EB791CC72EC60065487A /* YGJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */; };
 		79D5F5E81CC631580086B56F /* NSDate+SystemTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */; };
 		79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5EA1CC631650086B56F /* JLKPedometer.m */; };
 		79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5F31CC681220086B56F /* SQTopWindow.m */; };
@@ -56,14 +68,6 @@
 		B196BF1E1CC4E1340097A56F /* SQAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF1C1CC4E1340097A56F /* SQAddView.m */; };
 		B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF231CC517AF0097A56F /* NSDate+SQCustom.m */; };
 		B1B10C081CC4C596003B45EF /* SQConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B10C071CC4C596003B45EF /* SQConst.m */; };
-		B1C8801A1CC5C1640024C550 /* YGCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C8800F1CC5C1640024C550 /* YGCategoryModel.m */; };
-		B1C8801B1CC5C1640024C550 /* YGJobTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C880111CC5C1640024C550 /* YGJobTableModel.m */; };
-		B1C8801C1CC5C1640024C550 /* YGCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C880151CC5C1640024C550 /* YGCategoryTableViewCell.m */; };
-		B1C8801D1CC5C1640024C550 /* YGCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C880161CC5C1640024C550 /* YGCategoryTableViewCell.xib */; };
-		B1C8801E1CC5C1640024C550 /* YGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C880181CC5C1640024C550 /* YGJobTableViewCell.m */; };
-		B1C8801F1CC5C1640024C550 /* YGJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C880191CC5C1640024C550 /* YGJobTableViewCell.xib */; };
-		B1C880231CC5C1940024C550 /* SQJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C880211CC5C1940024C550 /* SQJobViewController.m */; };
-		B1C880241CC5C1940024C550 /* SQJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C880221CC5C1940024C550 /* SQJobViewController.xib */; };
 		D6F7BD55CB5EFD8AFED3FCDE /* libPods-LYZSJC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76B8353D53D25BE8C3F186 /* libPods-LYZSJC.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,25 @@
 
 /* Begin PBXFileReference section */
 		2B76B8353D53D25BE8C3F186 /* libPods-LYZSJC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYZSJC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B7EB591CC72EC60065487A /* YGCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryModel.h; sourceTree = "<group>"; };
+		79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryModel.m; sourceTree = "<group>"; };
+		79B7EB5B1CC72EC60065487A /* YGJobTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableModel.h; sourceTree = "<group>"; };
+		79B7EB5C1CC72EC60065487A /* YGJobTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableModel.m; sourceTree = "<group>"; };
+		79B7EB5E1CC72EC60065487A /* SQJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQJobViewController.h; sourceTree = "<group>"; };
+		79B7EB5F1CC72EC60065487A /* SQJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQJobViewController.m; sourceTree = "<group>"; };
+		79B7EB601CC72EC60065487A /* SQJobViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQJobViewController.xib; sourceTree = "<group>"; };
+		79B7EB611CC72EC60065487A /* YGJobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobDetailViewController.h; sourceTree = "<group>"; };
+		79B7EB621CC72EC60065487A /* YGJobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobDetailViewController.m; sourceTree = "<group>"; };
+		79B7EB631CC72EC60065487A /* YGJobDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobDetailViewController.xib; sourceTree = "<group>"; };
+		79B7EB651CC72EC60065487A /* YGCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryTableViewCell.h; sourceTree = "<group>"; };
+		79B7EB661CC72EC60065487A /* YGCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryTableViewCell.m; sourceTree = "<group>"; };
+		79B7EB671CC72EC60065487A /* YGCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		79B7EB681CC72EC60065487A /* YGJobDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobDetailHeaderView.h; sourceTree = "<group>"; };
+		79B7EB691CC72EC60065487A /* YGJobDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobDetailHeaderView.m; sourceTree = "<group>"; };
+		79B7EB6A1CC72EC60065487A /* YGJobDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobDetailHeaderView.xib; sourceTree = "<group>"; };
+		79B7EB6B1CC72EC60065487A /* YGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableViewCell.h; sourceTree = "<group>"; };
+		79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableViewCell.m; sourceTree = "<group>"; };
+		79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobTableViewCell.xib; sourceTree = "<group>"; };
 		79D5F5E61CC631580086B56F /* NSDate+SystemTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SystemTimeZone.h"; sourceTree = "<group>"; };
 		79D5F5E71CC631580086B56F /* NSDate+SystemTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SystemTimeZone.m"; sourceTree = "<group>"; };
 		79D5F5E91CC631650086B56F /* JLKPedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKPedometer.h; sourceTree = "<group>"; };
@@ -179,19 +202,6 @@
 		B196BF231CC517AF0097A56F /* NSDate+SQCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SQCustom.m"; sourceTree = "<group>"; };
 		B1B10C061CC4C596003B45EF /* SQConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQConst.h; sourceTree = "<group>"; };
 		B1B10C071CC4C596003B45EF /* SQConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQConst.m; sourceTree = "<group>"; };
-		B1C8800E1CC5C1640024C550 /* YGCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryModel.h; sourceTree = "<group>"; };
-		B1C8800F1CC5C1640024C550 /* YGCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryModel.m; sourceTree = "<group>"; };
-		B1C880101CC5C1640024C550 /* YGJobTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableModel.h; sourceTree = "<group>"; };
-		B1C880111CC5C1640024C550 /* YGJobTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableModel.m; sourceTree = "<group>"; };
-		B1C880141CC5C1640024C550 /* YGCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryTableViewCell.h; sourceTree = "<group>"; };
-		B1C880151CC5C1640024C550 /* YGCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryTableViewCell.m; sourceTree = "<group>"; };
-		B1C880161CC5C1640024C550 /* YGCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGCategoryTableViewCell.xib; sourceTree = "<group>"; };
-		B1C880171CC5C1640024C550 /* YGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableViewCell.h; sourceTree = "<group>"; };
-		B1C880181CC5C1640024C550 /* YGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableViewCell.m; sourceTree = "<group>"; };
-		B1C880191CC5C1640024C550 /* YGJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobTableViewCell.xib; sourceTree = "<group>"; };
-		B1C880201CC5C1940024C550 /* SQJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQJobViewController.h; sourceTree = "<group>"; };
-		B1C880211CC5C1940024C550 /* SQJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQJobViewController.m; sourceTree = "<group>"; };
-		B1C880221CC5C1940024C550 /* SQJobViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQJobViewController.xib; sourceTree = "<group>"; };
 		B1C880251CC5C1E40024C550 /* JLKURLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKURLHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +238,56 @@
 				841987F277890EB2B7FEBE7D /* Pods-LYZSJC.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		79B7EB571CC72EC60065487A /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				79B7EB581CC72EC60065487A /* Models */,
+				79B7EB5D1CC72EC60065487A /* ViewControllers */,
+				79B7EB641CC72EC60065487A /* Views */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		79B7EB581CC72EC60065487A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79B7EB591CC72EC60065487A /* YGCategoryModel.h */,
+				79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */,
+				79B7EB5B1CC72EC60065487A /* YGJobTableModel.h */,
+				79B7EB5C1CC72EC60065487A /* YGJobTableModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79B7EB5D1CC72EC60065487A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79B7EB5E1CC72EC60065487A /* SQJobViewController.h */,
+				79B7EB5F1CC72EC60065487A /* SQJobViewController.m */,
+				79B7EB601CC72EC60065487A /* SQJobViewController.xib */,
+				79B7EB611CC72EC60065487A /* YGJobDetailViewController.h */,
+				79B7EB621CC72EC60065487A /* YGJobDetailViewController.m */,
+				79B7EB631CC72EC60065487A /* YGJobDetailViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79B7EB641CC72EC60065487A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79B7EB651CC72EC60065487A /* YGCategoryTableViewCell.h */,
+				79B7EB661CC72EC60065487A /* YGCategoryTableViewCell.m */,
+				79B7EB671CC72EC60065487A /* YGCategoryTableViewCell.xib */,
+				79B7EB681CC72EC60065487A /* YGJobDetailHeaderView.h */,
+				79B7EB691CC72EC60065487A /* YGJobDetailHeaderView.m */,
+				79B7EB6A1CC72EC60065487A /* YGJobDetailHeaderView.xib */,
+				79B7EB6B1CC72EC60065487A /* YGJobTableViewCell.h */,
+				79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */,
+				79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		79D5F5F51CC6816A0086B56F /* Home */ = {
@@ -405,7 +465,7 @@
 			children = (
 				B1453C301CBFDAEF00207EE4 /* Ohter */,
 				79D5F5F51CC6816A0086B56F /* Home */,
-				B196BF081CC4E0E60097A56F /* Job */,
+				79B7EB571CC72EC60065487A /* Job */,
 				B196BF151CC4E1340097A56F /* Add */,
 				79D5F6351CC6855C0086B56F /* Sport */,
 				B1453C281CBFDAEF00207EE4 /* Me */,
@@ -512,16 +572,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		B196BF081CC4E0E60097A56F /* Job */ = {
-			isa = PBXGroup;
-			children = (
-				B1C8800D1CC5C1640024C550 /* Models */,
-				B1C880121CC5C1640024C550 /* ViewControllers */,
-				B1C880131CC5C1640024C550 /* Views */,
-			);
-			path = Job;
-			sourceTree = "<group>";
-		};
 		B196BF151CC4E1340097A56F /* Add */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,40 +603,6 @@
 			children = (
 				B196BF1B1CC4E1340097A56F /* SQAddView.h */,
 				B196BF1C1CC4E1340097A56F /* SQAddView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B1C8800D1CC5C1640024C550 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B1C8800E1CC5C1640024C550 /* YGCategoryModel.h */,
-				B1C8800F1CC5C1640024C550 /* YGCategoryModel.m */,
-				B1C880101CC5C1640024C550 /* YGJobTableModel.h */,
-				B1C880111CC5C1640024C550 /* YGJobTableModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B1C880121CC5C1640024C550 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				B1C880201CC5C1940024C550 /* SQJobViewController.h */,
-				B1C880211CC5C1940024C550 /* SQJobViewController.m */,
-				B1C880221CC5C1940024C550 /* SQJobViewController.xib */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B1C880131CC5C1640024C550 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B1C880141CC5C1640024C550 /* YGCategoryTableViewCell.h */,
-				B1C880151CC5C1640024C550 /* YGCategoryTableViewCell.m */,
-				B1C880161CC5C1640024C550 /* YGCategoryTableViewCell.xib */,
-				B1C880171CC5C1640024C550 /* YGJobTableViewCell.h */,
-				B1C880181CC5C1640024C550 /* YGJobTableViewCell.m */,
-				B1C880191CC5C1640024C550 /* YGJobTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -714,19 +730,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B7EB791CC72EC60065487A /* YGJobTableViewCell.xib in Resources */,
 				79D5F6341CC6816A0086B56F /* SQTopicVoiceView.xib in Resources */,
-				B1C8801F1CC5C1640024C550 /* YGJobTableViewCell.xib in Resources */,
 				B1453C571CBFDF1E00207EE4 /* SQMeViewController.xib in Resources */,
+				79B7EB771CC72EC60065487A /* YGJobDetailHeaderView.xib in Resources */,
 				79D5F6231CC6816A0086B56F /* SQCommentViewController.xib in Resources */,
 				79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */,
 				B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */,
-				B1C8801D1CC5C1640024C550 /* YGCategoryTableViewCell.xib in Resources */,
 				79D5F62E1CC6816A0086B56F /* SQTopicCell.xib in Resources */,
+				79B7EB751CC72EC60065487A /* YGCategoryTableViewCell.xib in Resources */,
 				79D5F6321CC6816A0086B56F /* SQTopicVideoView.xib in Resources */,
+				79B7EB731CC72EC60065487A /* YGJobDetailViewController.xib in Resources */,
 				B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */,
 				79D5F6301CC6816A0086B56F /* SQTopicPictureView.xib in Resources */,
 				79D5F6271CC6816A0086B56F /* SQShowPictureViewController.xib in Resources */,
-				B1C880241CC5C1940024C550 /* SQJobViewController.xib in Resources */,
+				79B7EB711CC72EC60065487A /* SQJobViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,39 +818,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */,
+				79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */,
 				79D5F6441CC6855C0086B56F /* JLKSportModel.m in Sources */,
 				79D5F6221CC6816A0086B56F /* SQCommentViewController.m in Sources */,
 				79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */,
 				B1B10C081CC4C596003B45EF /* SQConst.m in Sources */,
 				B1453C661CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m in Sources */,
 				79D5F6451CC6855C0086B56F /* JLKSportDetailViewController.m in Sources */,
+				79B7EB6E1CC72EC60065487A /* YGCategoryModel.m in Sources */,
 				79D5F6261CC6816A0086B56F /* SQShowPictureViewController.m in Sources */,
-				B1C8801A1CC5C1640024C550 /* YGCategoryModel.m in Sources */,
 				79D5F6241CC6816A0086B56F /* SQHomeMenuViewController.m in Sources */,
 				B1453C5D1CC076F300207EE4 /* SQTabBar.m in Sources */,
-				B1C880231CC5C1940024C550 /* SQJobViewController.m in Sources */,
 				79D5F6311CC6816A0086B56F /* SQTopicVideoView.m in Sources */,
 				79D5F62F1CC6816A0086B56F /* SQTopicPictureView.m in Sources */,
 				B1453C3C1CBFDAEF00207EE4 /* main.m in Sources */,
-				B1C8801C1CC5C1640024C550 /* YGCategoryTableViewCell.m in Sources */,
 				B1453C5A1CBFE1B700207EE4 /* SQNavigationController.m in Sources */,
-				B1C8801B1CC5C1640024C550 /* YGJobTableModel.m in Sources */,
 				B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */,
 				B1453C561CBFDF1E00207EE4 /* SQMeViewController.m in Sources */,
 				79D5F6461CC6855C0086B56F /* JLKSportViewController.m in Sources */,
 				79D5F6201CC6816A0086B56F /* SQTopic.m in Sources */,
 				B1453C401CBFDE7800207EE4 /* SQTabBarController.m in Sources */,
+				79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */,
 				B1453C611CC07BD100207EE4 /* UIView+SQCustom.m in Sources */,
+				79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */,
 				79D5F6211CC6816A0086B56F /* SQUser.m in Sources */,
 				79D5F62D1CC6816A0086B56F /* SQTopicCell.m in Sources */,
 				79D5F62A1CC6816A0086B56F /* SQDropdownView.m in Sources */,
 				79D5F6281CC6816A0086B56F /* SQTopicTableViewController.m in Sources */,
 				79D5F62B1CC6816A0086B56F /* SQHomeTitleButton.m in Sources */,
+				79B7EB761CC72EC60065487A /* YGJobDetailHeaderView.m in Sources */,
 				79D5F6331CC6816A0086B56F /* SQTopicVoiceView.m in Sources */,
 				B196BF1D1CC4E1340097A56F /* SQAddViewController.m in Sources */,
 				79D5F61F1CC6816A0086B56F /* SQComment.m in Sources */,
+				79B7EB721CC72EC60065487A /* YGJobDetailViewController.m in Sources */,
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,
-				B1C8801E1CC5C1640024C550 /* YGJobTableViewCell.m in Sources */,
+				79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */,
 				79D5F6291CC6816A0086B56F /* SQCommentHeaderView.m in Sources */,
 				79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */,
 				79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */,

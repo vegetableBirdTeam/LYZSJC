@@ -42,4 +42,7 @@
 /** 显示菜单栏 */
 - (void)showMenuView;
 
+/** 隐藏菜单 */
+- (void)hideMenuView;
+
 @end

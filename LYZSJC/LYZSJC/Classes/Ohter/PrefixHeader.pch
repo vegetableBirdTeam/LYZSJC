@@ -34,4 +34,7 @@
 /** 屏幕的高度 */
 #define SQScreenH [UIScreen mainScreen].bounds.size.height
 
+/** 通知 */
+#define SQNotificationCenter [NSNotificationCenter defaultCenter]
+
 #endif

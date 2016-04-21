@@ -166,6 +166,43 @@
 }
 
 - (void)clickMenu:(UIButton *)sender {
+    if (_isHidding) {
+        return ;
+    }
+    _isHidding = YES;
+    
+    // Nevermind button
+    _backBtn.center = CGPointFromString([_centerMenu objectAtIndex:6]);
+    [UIView animateWithDuration:0.3 delay:0.3 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.backBtn.center = CGPointFromString([self.centerLow objectAtIndex:3]);
+    } completion:^(BOOL finished) {
+        self.backBtn.hidden = YES;
+        self.isHidding = NO;
+    }];
+    
+    // Photo Image
+    [UIView animateWithDuration:0.6 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.photoBtn.center = CGPointFromString([_centerHigh objectAtIndex:1]);
+    } completion:^(BOOL finished) {
+        self.hidden = true;
+    }];
+    
+    // Text | Chat | Quote Image
+    [UIView animateWithDuration:0.6 delay:0.1 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.textBtn.center = CGPointFromString([_centerHigh objectAtIndex:0]);
+        self.videoBtn.center = CGPointFromString([_centerHigh objectAtIndex:2]);
+        self.voiceBtn.center = CGPointFromString([_centerHigh objectAtIndex:1]);
+    } completion:nil];
+    
+    // Link | Video Image
+    [UIView animateWithDuration:0.6 delay:0.2 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.linkBtn.center = CGPointFromString([_centerHigh objectAtIndex:0]);
+        self.button.center = CGPointFromString([_centerHigh objectAtIndex:2]);
+    } completion:^(BOOL finished) {
+        if (_delegate != nil && [self.delegate respondsToSelector:@selector(didCloseMenu)]) {
+            [self.delegate didCloseMenu];
+        }
+    }];
     int index = (int)sender.tag;
     //    [self hideMenuView];
     if (_delegate != nil && [self.delegate respondsToSelector:@selector(didClickMenu:)]) {
@@ -177,6 +214,9 @@
     [self hideMenuView];
 }
 
+/**
+ *  隐藏菜单
+ */
 - (void)hideMenuView {
     if (_isHidding) {
         return ;
@@ -217,6 +257,9 @@
     }];
 }
 
+/**
+ *  显示菜单
+ */
 - (void)showMenuView {
     self.hidden = NO;
     

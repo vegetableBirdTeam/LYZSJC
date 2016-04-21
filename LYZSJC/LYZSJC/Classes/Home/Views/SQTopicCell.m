@@ -142,8 +142,8 @@
 }
 
 - (void)setFrame:(CGRect)frame {
-    frame.origin.x = SQTopicCellMargin;
-    frame.size.width -= 2 * SQTopicCellMargin;
+//    frame.origin.x = SQTopicCellMargin;
+//    frame.size.width -= 2 * SQTopicCellMargin;
     frame.size.height -= SQTopicCellMargin;
     frame.origin.y += SQTopicCellMargin;
     

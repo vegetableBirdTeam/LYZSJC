@@ -74,8 +74,8 @@
     // 修改底部约束
     self.bottomSapce.constant = SQScreenH - frame.origin.y;
     // 动画时间
-    CGFloat duration = [note.userInfo[UIKeyboardAnimationCurveUserInfoKey] doubleValue];
-    
+    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+
     [UIView animateWithDuration:duration animations:^{
         [self.view layoutIfNeeded];
     }];
@@ -93,6 +93,7 @@
     /**头视图用户信息*/
     YGJobDetailHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"YGJobDetailHeaderView" owner:self options:nil] lastObject];
     headerView.frame = CGRectMake(0, 0, SQScreenW, [self heightForString] - 14 + 50);
+    
     [headerView assignment];
     self.tableView.tableHeaderView = headerView;
     

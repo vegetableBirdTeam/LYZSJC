@@ -55,17 +55,17 @@
 - (void)setupChildViewControllers {
     SQSportViewController *sportEquipment = [[SQSportViewController alloc] init];
     sportEquipment.title = @"跑步装备";
-    sportEquipment.type = 1;
+    sportEquipment.type = 2;
     [self addChildViewController:sportEquipment];
     
     SQSportViewController *sportDevelop = [[SQSportViewController alloc] init];
     sportDevelop.title = @"提高训练";
-    sportDevelop.type = 2;
+    sportDevelop.type = 3;
     [self addChildViewController:sportDevelop];
     
     SQSportViewController *sportStory = [[SQSportViewController alloc] init];
     sportStory.title = @"跑步故事";
-    sportStory.type = 3;
+    sportStory.type = 4;
     [self addChildViewController:sportStory];
 }
 
@@ -103,8 +103,12 @@
     _stepCountButton.width = stepView.width / 2;
     _stepCountButton.height = stepView.height;
     [_stepCountButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
-    _stepCountButton.titleLabel.font = [UIFont boldSystemFontOfSize:40];
+    _stepCountButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+    _stepCountButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     _stepCountButton.userInteractionEnabled = NO;
+    _stepCountButton.layer.cornerRadius = 20;
+    _stepCountButton.layer.borderWidth = 5;
+    _stepCountButton.layer.borderColor = [UIColor blackColor].CGColor;
     [self getStepNumber];
     
     UIButton *rankButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -112,8 +116,12 @@
     rankButton.width = stepView.width / 2;
     rankButton.height = stepView.height;
     rankButton.x = stepView.width / 2;
-    rankButton.titleLabel.font = [UIFont boldSystemFontOfSize:40];
-    [rankButton setTitle:@"排名:" forState:UIControlStateNormal];
+    rankButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+    rankButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    rankButton.layer.cornerRadius = 20;
+    rankButton.layer.borderWidth = 5;
+    rankButton.layer.borderColor = [UIColor blackColor].CGColor;
+    [rankButton setTitle:@"1000名" forState:UIControlStateNormal];
     [rankButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [rankButton addTarget:self action:@selector(pushRankList) forControlEvents:UIControlEventTouchUpInside];
     

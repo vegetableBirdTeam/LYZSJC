@@ -62,7 +62,7 @@ static NSString * const SQSportID = @"sport";
     // 设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
-    //self.tableView.separatorStyle = UITableViewCellEditingStyleNone;
+    self.tableView.separatorStyle = UITableViewCellEditingStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
     
     // 注册
@@ -209,6 +209,13 @@ static NSString * const SQSportID = @"sport";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SQSportCell *cell = [tableView dequeueReusableCellWithIdentifier:SQSportID];
     cell.model = self.sports[indexPath.row];
+    
+    if (indexPath.row % 2) {
+        cell.backgroundColor = [UIColor whiteColor];
+    } else {
+        cell.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
+    }
+    
     return cell;
 }
 

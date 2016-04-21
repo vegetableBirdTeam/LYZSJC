@@ -76,6 +76,10 @@
 		B196BF1E1CC4E1340097A56F /* SQAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF1C1CC4E1340097A56F /* SQAddView.m */; };
 		B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B196BF231CC517AF0097A56F /* NSDate+SQCustom.m */; };
 		B1B10C081CC4C596003B45EF /* SQConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B10C071CC4C596003B45EF /* SQConst.m */; };
+		B1D2B6701CC8AD7D009CF3BF /* SQAddTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B66E1CC8AD7D009CF3BF /* SQAddTextViewController.m */; };
+		B1D2B6711CC8AD7D009CF3BF /* SQAddTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B66F1CC8AD7D009CF3BF /* SQAddTextViewController.xib */; };
+		B1D2B6741CC8C835009CF3BF /* SQPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B6731CC8C835009CF3BF /* SQPlaceholderTextView.m */; };
+		B1D2B6771CC8CF06009CF3BF /* SQAddTagToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B6761CC8CF06009CF3BF /* SQAddTagToolbar.m */; };
 		D6F7BD55CB5EFD8AFED3FCDE /* libPods-LYZSJC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76B8353D53D25BE8C3F186 /* libPods-LYZSJC.a */; };
 /* End PBXBuildFile section */
 
@@ -225,6 +229,13 @@
 		B1B10C061CC4C596003B45EF /* SQConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQConst.h; sourceTree = "<group>"; };
 		B1B10C071CC4C596003B45EF /* SQConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQConst.m; sourceTree = "<group>"; };
 		B1C880251CC5C1E40024C550 /* JLKURLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKURLHeader.h; sourceTree = "<group>"; };
+		B1D2B66D1CC8AD7D009CF3BF /* SQAddTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddTextViewController.h; sourceTree = "<group>"; };
+		B1D2B66E1CC8AD7D009CF3BF /* SQAddTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAddTextViewController.m; sourceTree = "<group>"; };
+		B1D2B66F1CC8AD7D009CF3BF /* SQAddTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQAddTextViewController.xib; sourceTree = "<group>"; };
+		B1D2B6721CC8C835009CF3BF /* SQPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPlaceholderTextView.h; sourceTree = "<group>"; };
+		B1D2B6731CC8C835009CF3BF /* SQPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPlaceholderTextView.m; sourceTree = "<group>"; };
+		B1D2B6751CC8CF06009CF3BF /* SQAddTagToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddTagToolbar.h; sourceTree = "<group>"; };
+		B1D2B6761CC8CF06009CF3BF /* SQAddTagToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAddTagToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +641,9 @@
 			children = (
 				B196BF181CC4E1340097A56F /* SQAddViewController.h */,
 				B196BF191CC4E1340097A56F /* SQAddViewController.m */,
+				B1D2B66D1CC8AD7D009CF3BF /* SQAddTextViewController.h */,
+				B1D2B66E1CC8AD7D009CF3BF /* SQAddTextViewController.m */,
+				B1D2B66F1CC8AD7D009CF3BF /* SQAddTextViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -639,6 +653,10 @@
 			children = (
 				B196BF1B1CC4E1340097A56F /* SQAddView.h */,
 				B196BF1C1CC4E1340097A56F /* SQAddView.m */,
+				B1D2B6721CC8C835009CF3BF /* SQPlaceholderTextView.h */,
+				B1D2B6731CC8C835009CF3BF /* SQPlaceholderTextView.m */,
+				B1D2B6751CC8CF06009CF3BF /* SQAddTagToolbar.h */,
+				B1D2B6761CC8CF06009CF3BF /* SQAddTagToolbar.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -716,9 +734,9 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = YG;
+				CLASSPREFIX = SQ;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = YG;
+				ORGANIZATIONNAME = SQ;
 				TargetAttributes = {
 					B1178EB71CA44EA400F0D799 = {
 						CreatedOnToolsVersion = 7.2;
@@ -775,6 +793,7 @@
 				B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */,
 				79D5F62E1CC6816A0086B56F /* SQTopicCell.xib in Resources */,
 				925B68AF1CC75686000F8A33 /* YGJobCommitCell.xib in Resources */,
+				B1D2B6711CC8AD7D009CF3BF /* SQAddTextViewController.xib in Resources */,
 				79B7EB751CC72EC60065487A /* YGCategoryTableViewCell.xib in Resources */,
 				B15FC3F91CC756100093516E /* SQCommentCell.xib in Resources */,
 				79D5F6321CC6816A0086B56F /* SQTopicVideoView.xib in Resources */,
@@ -872,6 +891,7 @@
 				79D5F6311CC6816A0086B56F /* SQTopicVideoView.m in Sources */,
 				790109111CC79D0500BF6F99 /* JLKSportRankListViewController.m in Sources */,
 				79D5F62F1CC6816A0086B56F /* SQTopicPictureView.m in Sources */,
+				B1D2B6741CC8C835009CF3BF /* SQPlaceholderTextView.m in Sources */,
 				B1453C3C1CBFDAEF00207EE4 /* main.m in Sources */,
 				B1453C5A1CBFE1B700207EE4 /* SQNavigationController.m in Sources */,
 				B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */,
@@ -880,6 +900,7 @@
 				79D5F6461CC6855C0086B56F /* JLKSportViewController.m in Sources */,
 				79D5F6201CC6816A0086B56F /* SQTopic.m in Sources */,
 				B1453C401CBFDE7800207EE4 /* SQTabBarController.m in Sources */,
+				B1D2B6701CC8AD7D009CF3BF /* SQAddTextViewController.m in Sources */,
 				79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */,
 				B1453C611CC07BD100207EE4 /* UIView+SQCustom.m in Sources */,
 				79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */,
@@ -899,6 +920,7 @@
 				79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */,
 				B15FC3FF1CC757990093516E /* UIImage+SQCustom.m in Sources */,
 				79D5F6291CC6816A0086B56F /* SQCommentHeaderView.m in Sources */,
+				B1D2B6771CC8CF06009CF3BF /* SQAddTagToolbar.m in Sources */,
 				79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */,
 				79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */,
 				79D5F62C1CC6816A0086B56F /* SQProgressView.m in Sources */,
@@ -1037,11 +1059,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = LYZSJC/Classes/Ohter/PrefixHeader.pch;
 				INFOPLIST_FILE = LYZSJC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CN.SQ.LYZSJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1051,11 +1076,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = LYZSJC/Classes/Ohter/PrefixHeader.pch;
 				INFOPLIST_FILE = LYZSJC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CN.SQ.LYZSJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

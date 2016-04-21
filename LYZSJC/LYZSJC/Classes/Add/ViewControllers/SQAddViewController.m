@@ -7,11 +7,14 @@
 //
 
 #import "SQAddViewController.h"
+#import "SQAddTextViewController.h"
+#import "SQNavigationController.h"
 #import "SQAddView.h"
 
 @interface SQAddViewController ()<SQAddViewDelegate>
 
 @property (nonatomic, weak) SQAddView *addView;
+@property (nonatomic, assign) int index;
 
 @end
 
@@ -40,7 +43,7 @@
  *  点击菜单栏按钮
  */
 - (void)didClickMenu:(int)index {
-    
+    self.index = index;
 }
 
 /**
@@ -55,7 +58,14 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    self.navigationController.navigationBarHidden = NO;
+    if (self.index == 200) {
+        SQAddTextViewController *textVC = [[SQAddTextViewController alloc] init];
+        SQNavigationController *nav = [[SQNavigationController alloc] initWithRootViewController:textVC];
+        
+        // 这里不能使用self来弹出其他控制器，因为self执行了dismiss操作
+        UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [root presentViewController:nav animated:YES completion:nil];
+    }
 }
 
 @end

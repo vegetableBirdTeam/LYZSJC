@@ -99,16 +99,15 @@
     stepView.y = SQTitlesViewY;
     
     self.stepCountButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _stepCountButton.backgroundColor = [UIColor blueColor];
+    _stepCountButton.backgroundColor = [UIColor colorWithRed:5 / 255.0 green:39 / 255.0 blue:175 / 255.0 alpha:1.0];
     _stepCountButton.width = stepView.width / 2;
     _stepCountButton.height = stepView.height;
     [_stepCountButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
     _stepCountButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
     _stepCountButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     _stepCountButton.userInteractionEnabled = NO;
-    _stepCountButton.layer.cornerRadius = 20;
-    _stepCountButton.layer.borderWidth = 5;
-    _stepCountButton.layer.borderColor = [UIColor blackColor].CGColor;
+    _stepCountButton.layer.cornerRadius = 10;
+    _stepCountButton.layer.masksToBounds = YES;
     [self getStepNumber];
     
     UIButton *rankButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -118,9 +117,8 @@
     rankButton.x = stepView.width / 2;
     rankButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
     rankButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    rankButton.layer.cornerRadius = 20;
-    rankButton.layer.borderWidth = 5;
-    rankButton.layer.borderColor = [UIColor blackColor].CGColor;
+    rankButton.layer.cornerRadius = 10;
+    rankButton.layer.masksToBounds = YES;
     [rankButton setTitle:@"1000名" forState:UIControlStateNormal];
     [rankButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [rankButton addTarget:self action:@selector(pushRankList) forControlEvents:UIControlEventTouchUpInside];

@@ -53,6 +53,7 @@
     _iconImageView.x = 20 + _rankLabel.width;
     _iconImageView.y = 10;
     _iconImageView.layer.cornerRadius = _iconImageView.width / 2;
+    _iconImageView.layer.masksToBounds = YES;
     
     _usernameLabel.x = 30 + _iconImageView.x + _iconImageView.width;
     _usernameLabel.y = 10;

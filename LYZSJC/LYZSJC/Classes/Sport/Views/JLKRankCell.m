@@ -88,7 +88,7 @@
         _rankLabel.height = first;
         _iconImageView.width = first;
         _iconImageView.height = first;
-        _usernameLabel.width = SCREENW - first * 3 / 2 - 40;
+        _usernameLabel.width = SQScreenW - first * 3 / 2 - 40;
         _usernameLabel.height = first;
     } else if (rank == 1) {
         _rankLabel.textColor = [UIColor yellowColor];
@@ -98,7 +98,7 @@
         _rankLabel.height = second;
         _iconImageView.width = second;
         _iconImageView.height = second;
-        _usernameLabel.width = SCREENW - second * 3 / 2 - 40;
+        _usernameLabel.width = SQScreenW - second * 3 / 2 - 40;
         _usernameLabel.height = second;
     } else if (rank == 2) {
         _rankLabel.textColor = [UIColor blueColor];
@@ -108,7 +108,7 @@
         _rankLabel.height = third;
         _iconImageView.width = third;
         _iconImageView.height = third;
-        _usernameLabel.width = SCREENW - third * 3 / 2 - 40;
+        _usernameLabel.width = SQScreenW - third * 3 / 2 - 40;
         _usernameLabel.height = third;
     } else {
         _rankLabel.textColor = [UIColor blackColor];
@@ -118,7 +118,7 @@
         _rankLabel.height = other;
         _iconImageView.width = other;
         _iconImageView.height = other;
-        _usernameLabel.width = SCREENW - other * 3 / 2 - 40;
+        _usernameLabel.width = SQScreenW - other * 3 / 2 - 40;
         _usernameLabel.height = other;
     }
 }

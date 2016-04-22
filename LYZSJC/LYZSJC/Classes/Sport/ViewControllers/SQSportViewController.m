@@ -97,6 +97,8 @@ static NSString * const SQSportID = @"sport";
     [params setValue:@(1) forKey:@"page"];
     [params setValue:@(kPAGESIZE) forKey:@"pagesize"];
     params[@"subject_id"] = @(self.type);
+    params[@"sid"] = @"19417413";
+    params[@"uid"] = @"c68447e990a57e67ce181fca39aa409e";
     
     self.params = params;
     

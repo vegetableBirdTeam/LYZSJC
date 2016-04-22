@@ -52,6 +52,9 @@
 		79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F63F1CC6855C0086B56F /* SQSportViewController.m */; };
 		79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F6421CC6855C0086B56F /* SQSportCell.m */; };
 		79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D5F6431CC6855C0086B56F /* SQSportCell.xib */; };
+		79E7ED1A1CC9BA3600FA6605 /* JLKUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */; };
+		79E7ED1C1CC9BA5A00FA6605 /* JLKUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */; };
+		79E7ED1F1CC9BE5600FA6605 /* JLKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */; };
 		925B68AE1CC75686000F8A33 /* YGJobCommitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */; };
 		925B68AF1CC75686000F8A33 /* YGJobCommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925B68AD1CC75686000F8A33 /* YGJobCommitCell.xib */; };
 		B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC71CA44EA500F0D799 /* Assets.xcassets */; };
@@ -180,6 +183,11 @@
 		79D5F6411CC6855C0086B56F /* SQSportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSportCell.h; sourceTree = "<group>"; };
 		79D5F6421CC6855C0086B56F /* SQSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportCell.m; sourceTree = "<group>"; };
 		79D5F6431CC6855C0086B56F /* SQSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQSportCell.xib; sourceTree = "<group>"; };
+		79E7ED181CC9BA3600FA6605 /* JLKUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfoView.h; sourceTree = "<group>"; };
+		79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfoView.m; sourceTree = "<group>"; };
+		79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLKUserInfoView.xib; sourceTree = "<group>"; };
+		79E7ED1D1CC9BE5600FA6605 /* JLKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfo.h; sourceTree = "<group>"; };
+		79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfo.m; sourceTree = "<group>"; };
 		841987F277890EB2B7FEBE7D /* Pods-LYZSJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZSJC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYZSJC/Pods-LYZSJC.release.xcconfig"; sourceTree = "<group>"; };
 		925B68AB1CC75686000F8A33 /* YGJobCommitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobCommitCell.h; sourceTree = "<group>"; };
 		925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobCommitCell.m; sourceTree = "<group>"; };
@@ -446,6 +454,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		79E7ED161CC9BA0F00FA6605 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79E7ED1D1CC9BE5600FA6605 /* JLKUserInfo.h */,
+				79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79E7ED171CC9BA0F00FA6605 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E7ED181CC9BA3600FA6605 /* JLKUserInfoView.h */,
+				79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */,
+				79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B1178EAF1CA44EA400F0D799 = {
 			isa = PBXGroup;
 			children = (
@@ -521,18 +548,11 @@
 		B1453C281CBFDAEF00207EE4 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				B1453C291CBFDAEF00207EE4 /* Models */,
+				79E7ED161CC9BA0F00FA6605 /* Models */,
 				B1453C2A1CBFDAEF00207EE4 /* ViewControllers */,
-				B1453C2B1CBFDAEF00207EE4 /* Views */,
+				79E7ED171CC9BA0F00FA6605 /* Views */,
 			);
 			path = Me;
-			sourceTree = "<group>";
-		};
-		B1453C291CBFDAEF00207EE4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		B1453C2A1CBFDAEF00207EE4 /* ViewControllers */ = {
@@ -543,13 +563,6 @@
 				B1453C551CBFDF1E00207EE4 /* SQMeViewController.xib */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B1453C2B1CBFDAEF00207EE4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		B1453C301CBFDAEF00207EE4 /* Ohter */ = {
@@ -734,9 +747,9 @@
 		B1178EB01CA44EA400F0D799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = SQ;
+				CLASSPREFIX = JLK;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = SQ;
+				ORGANIZATIONNAME = JLK;
 				TargetAttributes = {
 					B1178EB71CA44EA400F0D799 = {
 						CreatedOnToolsVersion = 7.2;
@@ -787,6 +800,7 @@
 				79B7EB791CC72EC60065487A /* YGJobTableViewCell.xib in Resources */,
 				79D5F6341CC6816A0086B56F /* SQTopicVoiceView.xib in Resources */,
 				B1453C571CBFDF1E00207EE4 /* SQMeViewController.xib in Resources */,
+				79E7ED1C1CC9BA5A00FA6605 /* JLKUserInfoView.xib in Resources */,
 				79B7EB771CC72EC60065487A /* YGJobDetailHeaderView.xib in Resources */,
 				79D5F6231CC6816A0086B56F /* SQCommentViewController.xib in Resources */,
 				79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */,
@@ -919,6 +933,8 @@
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,
 				79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */,
 				B15FC3FF1CC757990093516E /* UIImage+SQCustom.m in Sources */,
+				79E7ED1A1CC9BA3600FA6605 /* JLKUserInfoView.m in Sources */,
+				79E7ED1F1CC9BE5600FA6605 /* JLKUserInfo.m in Sources */,
 				79D5F6291CC6816A0086B56F /* SQCommentHeaderView.m in Sources */,
 				B1D2B6771CC8CF06009CF3BF /* SQAddTagToolbar.m in Sources */,
 				79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */,

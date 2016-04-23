@@ -29,18 +29,18 @@
 /**
  *  表情键盘
  */
-- (SQEmotionKeyboard *)emotionKeyboard {
-    if (!_emotionKeyboard) {
-        _emotionKeyboard = [[SQEmotionKeyboard alloc] init];
-        _emotionKeyboard.width = SQScreenW;
-        self.emotionKeyboard.height = 256;
-    }
-    return _emotionKeyboard;
+- (void)setupEmotionKeyboard {
+    _emotionKeyboard = [[SQEmotionKeyboard alloc] init];
+    _emotionKeyboard.width = SQScreenW;
+    self.emotionKeyboard.height = 256;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = SQGlobalBkg;
+    
+    // 加载表情键盘
+    [self setupEmotionKeyboard];
     
     // 创建nav
     [self setupNav];
@@ -158,6 +158,7 @@
  *  返回按钮
  */
 - (void)cancel {
+    [self.view endEditing:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -165,6 +166,8 @@
  *  发表按钮
  */
 - (void)post {
+    [self.view endEditing:YES];
+    
     // 发布没图片的吐槽
     
     // 发布有图片的吐槽

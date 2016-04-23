@@ -14,6 +14,7 @@
 @interface SQAddViewController ()<SQAddViewDelegate>
 
 @property (nonatomic, weak) SQAddView *addView;
+@property (nonatomic, strong) SQAddTextViewController *addVC;
 @property (nonatomic, assign) int index;
 
 @end
@@ -32,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
+    
+    _addVC = [[SQAddTextViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,8 +62,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     if (self.index == 200) {
-        SQAddTextViewController *textVC = [[SQAddTextViewController alloc] init];
-        SQNavigationController *nav = [[SQNavigationController alloc] initWithRootViewController:textVC];
+        SQNavigationController *nav = [[SQNavigationController alloc] initWithRootViewController:_addVC];
         
         // 这里不能使用self来弹出其他控制器，因为self执行了dismiss操作
         UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;

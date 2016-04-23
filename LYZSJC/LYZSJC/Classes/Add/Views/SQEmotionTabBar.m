@@ -56,6 +56,7 @@
     
     [btn setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:selectImage] forState:UIControlStateDisabled];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateDisabled];
     
     return btn;
 }

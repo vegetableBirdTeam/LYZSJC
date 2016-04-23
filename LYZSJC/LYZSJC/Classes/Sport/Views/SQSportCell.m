@@ -15,7 +15,7 @@
     _model = model;
     
     NSURL *url = [NSURL URLWithString:model.cover_img];
-    [self.cover_imgImageView sd_setImageWithURL:url];
+    [self.cover_imgImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"deemo"]];
     
     self.title_Label.text = model.title;
     

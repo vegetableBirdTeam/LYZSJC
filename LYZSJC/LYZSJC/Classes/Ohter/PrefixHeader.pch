@@ -21,6 +21,9 @@
 #import "UIView+SQCustom.h"
 #import "UIBarButtonItem+SQCustom.h"
 #import "NSDate+SQCustom.h"
+#import "NSString+SQEmoji.h"
+#import "UITextView+SQCustom.h"
+
 #import "UIImageView+WebCache.h"
 
 #define SQLogFunc SQLog(@"%s", __func__)
@@ -33,5 +36,11 @@
 #define SQScreenW [UIScreen mainScreen].bounds.size.width
 /** 屏幕的高度 */
 #define SQScreenH [UIScreen mainScreen].bounds.size.height
+
+/** 通知 */
+#define SQNotificationCenter [NSNotificationCenter defaultCenter]
+
+/** 最近表情的存储路径 */
+#define SQRecentEmotionsPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"emotions.archive"]
 
 #endif

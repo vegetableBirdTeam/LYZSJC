@@ -73,10 +73,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     JLKRankCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JLKRankCell"];
-    //if (!cell) {
-    //    cell = [[JLKRankCell alloc] init];
-    //}
-    cell.rank = indexPath.row + 1;
+    cell.rank = indexPath.row;
     cell.model = self.rankListArray[indexPath.row];
     cell.userInteractionEnabled = NO;
     

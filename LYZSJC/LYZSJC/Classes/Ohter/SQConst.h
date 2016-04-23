@@ -25,6 +25,29 @@ typedef enum {
     SQSportTypeStory
 } SQSportType;
 
+typedef enum {
+    /** 最近 */
+    SQEmotionTabBarButtonTypeRecent,
+    /** 默认 */
+    SQEmotionTabBarButtonTypeDefault, 
+    /** emoji */
+    SQEmotionTabBarButtonTypeEmoji,
+    /** 浪小花 */
+    SQEmotionTabBarButtonTypeLxh,
+    
+} SQEmotionTabBarButtonType;
+
+typedef enum {
+    /** 图片 */
+    SQAddTagToolbarButtonTypePicture,
+    /** @ */
+    SQAddTagToolbarButtonTypeMention,
+    /** 表情 */
+    SQAddTagToolbarButtonTypeEmotion
+} SQAddTagToolbarButtonType;
+
+
+
 /** 精华-所有顶部标题高度 */
 UIKIT_EXTERN CGFloat const SQTitlesViewH;
 /** 精华-所有顶部标题宽度 */
@@ -50,3 +73,10 @@ UIKIT_EXTERN NSString * const SQUserSexFemale;
 
 /** 精华-cell-最热评论标题的高度 */
 UIKIT_EXTERN CGFloat const SQTopicCellTopCmtTitleH;
+
+
+/********  表情键盘  **********/
+/** 一页中最多3行 */
+UIKIT_EXTERN int SQEmotionMaxRows;
+/** 一行中最多7列 */
+UIKIT_EXTERN int SQEmotionMaxCols;

@@ -7,6 +7,7 @@
 //  拥有占位文字功能的textView
 
 #import <UIKit/UIKit.h>
+@class SQEmotion;
 
 @interface SQPlaceholderTextView : UITextView
 
@@ -14,5 +15,9 @@
 @property (nonatomic, copy) NSString *placeholder;
 /** 占位文字的颜色 */
 @property (nonatomic, strong) UIColor *placeholderColor;
+
+/** 插入表情 */
+- (void)insertEmotion:(SQEmotion *)emotion;
+- (NSString *)fullText;
 
 @end

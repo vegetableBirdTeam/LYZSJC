@@ -8,18 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    /** 拍照 */
-    SQAddTagToolbarButtonTypeCamera,
-    /** 图片 */
-    SQAddTagToolbarButtonTypePicture,
-    /** @ */
-    SQAddTagToolbarButtonTypeMention,
-    /** # */
-    SQAddTagToolbarButtonTypeTrend,
-    SQAddTagToolbarButtonTypeEmotion
-} SQAddTagToolbarButtonType;
+@class SQAddTagToolbar;
+
+@protocol SQAddTagToolbarDelegate <NSObject>
+
+@optional
+- (void)addTagToolbar:(SQAddTagToolbar *)toolbar didClickButton:(SQAddTagToolbarButtonType)type;
+
+@end
 
 @interface SQAddTagToolbar : UIView
+
+/** 是否要显示键盘按钮 */
+@property (nonatomic, assign) BOOL showKeyboardButton;
+/** 代理 */
+@property (nonatomic, weak) id<SQAddTagToolbarDelegate> delegate;
 
 @end

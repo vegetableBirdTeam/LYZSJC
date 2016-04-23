@@ -22,14 +22,26 @@
 @property (nonatomic, strong) NSMutableArray *nameArray;    // 测试
 @property (nonatomic, strong) NSMutableArray *content;      // 测试
 
+@property (nonatomic, assign) CGFloat ceshi; // 测试
+
 @end
 
 @implementation YGJobDetailViewController
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    self.ceshi = [self heightForString];
+    
+    [self createHeaderView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"详情";
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.nameArray = [@[@"沈强", @"季良坤", @"黄玉玲", @"花花", @"小红", @"东方不败", @"呵呵哒", @"令狐冲", @"隔壁老王", @"中二"] mutableCopy];
     self.content = [@[@"凤凰科技讯 北京时间4月20日消息，苹果新款12英寸MacBook正式亮相，初步测试报告也已经出炉",
@@ -43,9 +55,11 @@
                       @"如果用户需要更高速的MacBook，苹果可以将产品升级到1.3 GHz英特尔双核m7处理器，只是512G版本需要增加150美元，入门级256GB版本（1.1GHz m3处理器）需要增加250美元。所有机型都配有8GB内存，安装英特尔HD Graphics 515芯片。",
                       @"😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁",] mutableCopy];
     
-    [self createHeaderView];
-    
     [self createSteup];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 1000;
+    [self.tableView registerNib:[UINib nibWithNibName:@"YGJobCommitCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"commitCell"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
@@ -92,13 +106,9 @@
     
     /**头视图用户信息*/
     YGJobDetailHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"YGJobDetailHeaderView" owner:self options:nil] lastObject];
-    headerView.frame = CGRectMake(0, 0, SQScreenW, [self heightForString] - 14 + 50);
+    headerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.ceshi + 117);
     [headerView assignment];
     self.tableView.tableHeaderView = headerView;
-    
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 1000;
-    [self.tableView registerNib:[UINib nibWithNibName:@"YGJobCommitCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"commitCell"];
     
 }
 
@@ -114,16 +124,16 @@
     
 }
 
-
 /**
  *  自适应高度
  */
 - (CGFloat)heightForString {
     
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:17], NSFontAttributeName, nil];
-    CGRect rect = [kString boundingRectWithSize:CGSizeMake(SQScreenW - 20, 0) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingTruncatesLastVisibleLine attributes:dict context:nil];
+    CGRect rect = [kString boundingRectWithSize:CGSizeMake(SQScreenW - 20, 1000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingTruncatesLastVisibleLine attributes:dict context:nil];
     
     return rect.size.height;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -171,7 +181,6 @@
         CGRect rect = CGRectMake(0, cell.height / 2, cell.width, cell.height / 2);
         [menu setTargetRect:rect inView:cell];
         [menu setMenuVisible:YES animated:YES];
-        
         
     }
     

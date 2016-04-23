@@ -88,6 +88,7 @@
                 <outlet property="user_image" destination="E9j-D8-hAg" id="FIw-IN-qZU"/>
                 <outlet property="user_name" destination="KXP-MD-4rM" id="dfH-w3-BrF"/>
             </connections>
+            <point key="canvasLocation" x="553" y="505"/>
         </view>
     </objects>
 </document>

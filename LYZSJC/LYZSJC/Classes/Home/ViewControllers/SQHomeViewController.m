@@ -51,7 +51,7 @@
     
     SQTopicTableViewController *video = [[SQTopicTableViewController alloc] init];
     video.title = @"视频";
-    video.type = SQTopicTypeVideo;
+    video.type = SQTopicTypeVideo; 
     [self addChildViewController:video];
     
     SQTopicTableViewController *voice = [[SQTopicTableViewController alloc] init];

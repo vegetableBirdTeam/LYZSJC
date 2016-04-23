@@ -33,3 +33,11 @@ NSString * const SQUserSexFemale = @"f";
 
 /** 精华-cell-最热评论标题的高度 */
 CGFloat const SQTopicCellTopCmtTitleH = 20;
+
+
+
+/********  表情键盘  **********/
+/** 一页中最多3行 */
+int SQEmotionMaxRows = 3;
+/** 一行中最多7列 */
+int SQEmotionMaxCols = 7;

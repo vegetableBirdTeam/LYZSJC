@@ -8,7 +8,7 @@
 
 #import "SQNavigationController.h"
 
-@interface SQNavigationController ()
+@interface SQNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -16,10 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // gei 
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+/**
+ *  自定义返回按钮或者隐藏navigationBar导致的该手势未起作用，需要重写代理方法
+ */
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (self.viewControllers.count <= 1 ) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 /**

@@ -61,13 +61,11 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    if (self.index == 200) {
-        SQNavigationController *nav = [[SQNavigationController alloc] initWithRootViewController:_addVC];
-        
-        // 这里不能使用self来弹出其他控制器，因为self执行了dismiss操作
-        UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [root presentViewController:nav animated:YES completion:nil];
-    }
+    SQNavigationController *nav = [[SQNavigationController alloc] initWithRootViewController:_addVC];
+    _addVC.buttonTag = self.index;
+    // 这里不能使用self来弹出其他控制器，因为self执行了dismiss操作
+    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:nav animated:YES completion:nil];
 }
 
 @end

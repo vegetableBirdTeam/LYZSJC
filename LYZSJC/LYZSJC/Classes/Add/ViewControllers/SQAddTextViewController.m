@@ -11,6 +11,8 @@
 #import "SQAddTagToolbar.h"
 #import "SQEmotionKeyboard.h"
 
+#import <MobileCoreServices/MobileCoreServices.h>
+
 @interface SQAddTextViewController ()<SQAddTagToolbarDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate>
 
 /** 文本输入控件 */
@@ -38,6 +40,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = SQGlobalBkg;
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0) {
+        self.modalPresentationStyle=UIModalPresentationOverCurrentContext;
+    }
+    
+    
+    if (self.buttonTag == 201 || self.buttonTag == 205) {
+        [self openImagePickerController:UIImagePickerControllerSourceTypeCamera];
+    }
     
     // 加载表情键盘
     [self setupEmotionKeyboard];
@@ -207,12 +218,50 @@
  *  打开相册
  */
 - (void)openAlbum {
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) return;
+    [self openImagePickerController:UIImagePickerControllerSourceTypePhotoLibrary];
+}
 
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    picker.delegate = self;
-    [self presentViewController:picker animated:YES completion:nil];
+- (void)openImagePickerController:(UIImagePickerControllerSourceType)type {
+    // 判断设备是否存在摄像头，有调用系统相机，没有提醒用户
+    if ([UIImagePickerController isSourceTypeAvailable:type]) {
+        // 创建相机
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = type; // 指定数据来源，来自于相机
+        picker.delegate = self; // 指定代理
+        picker.allowsEditing = YES; // 允许编辑
+        
+        // 模态弹出
+        [self presentViewController:picker animated:YES completion:nil];
+    } else {
+        // 没有摄像头用户，提醒用户您的设备没有摄像头
+        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提醒" message:@"您的设备没有摄像头" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"您的设备没有摄像头" style:UIAlertActionStyleCancel handler:nil];
+        [controller addAction:action];
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+    
+    if ([UIImagePickerController isSourceTypeAvailable:type]) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = type; // 指定数据来源为相册
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+    
+    if ([UIImagePickerController isSourceTypeAvailable:type]) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        //设置最长摄像时间
+        picker.videoMaximumDuration = 30;
+        //允许用户进行编辑
+        picker.allowsEditing = YES;
+        picker.sourceType = type;
+        picker.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie, nil];
+        picker.allowsEditing = NO;
+        
+        UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [root presentViewController:picker animated:YES completion:nil];
+    }
 }
 
 #pragma mark -<UIImagePickerControllerDelegate>
@@ -220,9 +269,20 @@
  *  从UIImagePickerController选择完图片后就调用 (选择相册图片完毕)
  */
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    //获取媒体类型
+    NSString* mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+    //判断是静态图像还是视频
+    if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
+        //获取用户编辑之后的图像
+        UIImage* editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
+        SQLog(@"editedImage is %@", editedImage);
+    }else if ([mediaType isEqualToString:(NSString *)kUTTypeMovie]) {
+        //获取视频文件的url
+        NSURL* mediaURL = [info objectForKey:UIImagePickerControllerMediaURL];
+        SQLog(@"mediaURL is %@", mediaURL);
+
+    }
     [picker dismissViewControllerAnimated:YES completion:nil];
-    UIImage *image = info[UIImagePickerControllerOriginalImage];
-    SQLog(@"image = %@", image);
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

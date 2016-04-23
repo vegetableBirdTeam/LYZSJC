@@ -10,4 +10,6 @@
 
 @interface SQAddTextViewController : UIViewController
 
+@property (nonatomic, assign) NSInteger buttonTag;
+
 @end

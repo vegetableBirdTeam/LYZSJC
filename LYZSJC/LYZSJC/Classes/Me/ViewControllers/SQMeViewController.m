@@ -57,6 +57,8 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
+    NSLog(@"%@", [NSBundle mainBundle]);
+    
     JLKUserInfoView *userinfoView = [[[NSBundle mainBundle] loadNibNamed:@"JLKUserInfoView" owner:self options:nil] lastObject];
     userinfoView.frame = CGRectMake(0, 0, SQScreenW, 200);
     userinfoView.userinfo = self.userInfo;

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		790109111CC79D0500BF6F99 /* JLKSportRankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */; };
-		790109151CC7A23100BF6F99 /* JLKRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109131CC7A23100BF6F99 /* JLKRankCell.m */; };
-		790109191CC7A47700BF6F99 /* JLKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790109181CC7A47700BF6F99 /* JLKRankModel.m */; };
 		79B7EB6E1CC72EC60065487A /* YGCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */; };
 		79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5C1CC72EC60065487A /* YGJobTableModel.m */; };
 		79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB5F1CC72EC60065487A /* SQJobViewController.m */; };
@@ -22,6 +19,20 @@
 		79B7EB771CC72EC60065487A /* YGJobDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6A1CC72EC60065487A /* YGJobDetailHeaderView.xib */; };
 		79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */; };
 		79B7EB791CC72EC60065487A /* YGJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */; };
+		79BE3B961CCB270E00B0BA5A /* JLKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B771CCB270E00B0BA5A /* JLKUserInfo.m */; };
+		79BE3B971CCB270E00B0BA5A /* SQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B7B1CCB270E00B0BA5A /* SQMeViewController.m */; };
+		79BE3B981CCB270E00B0BA5A /* SQMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BE3B7C1CCB270E00B0BA5A /* SQMeViewController.xib */; };
+		79BE3B991CCB270E00B0BA5A /* JLKUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B7F1CCB270E00B0BA5A /* JLKUserInfoView.m */; };
+		79BE3B9A1CCB270E00B0BA5A /* JLKUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BE3B801CCB270E00B0BA5A /* JLKUserInfoView.xib */; };
+		79BE3B9B1CCB270E00B0BA5A /* JLKRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B841CCB270E00B0BA5A /* JLKRankModel.m */; };
+		79BE3B9C1CCB270E00B0BA5A /* JLKSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B861CCB270E00B0BA5A /* JLKSportModel.m */; };
+		79BE3B9D1CCB270E00B0BA5A /* JLKSportDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B891CCB270E00B0BA5A /* JLKSportDetailViewController.m */; };
+		79BE3B9E1CCB270E00B0BA5A /* JLKSportRankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B8B1CCB270E00B0BA5A /* JLKSportRankListViewController.m */; };
+		79BE3B9F1CCB270E00B0BA5A /* JLKSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B8D1CCB270E00B0BA5A /* JLKSportViewController.m */; };
+		79BE3BA01CCB270E00B0BA5A /* SQSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B8F1CCB270E00B0BA5A /* SQSportViewController.m */; };
+		79BE3BA11CCB270E00B0BA5A /* JLKRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B921CCB270E00B0BA5A /* JLKRankCell.m */; };
+		79BE3BA21CCB270E00B0BA5A /* SQSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE3B941CCB270E00B0BA5A /* SQSportCell.m */; };
+		79BE3BA31CCB270E00B0BA5A /* SQSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BE3B951CCB270E00B0BA5A /* SQSportCell.xib */; };
 		79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5EA1CC631650086B56F /* JLKPedometer.m */; };
 		79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5F31CC681220086B56F /* SQTopWindow.m */; };
 		79D5F61F1CC6816A0086B56F /* SQComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F5F81CC6816A0086B56F /* SQComment.m */; };
@@ -46,15 +57,6 @@
 		79D5F6321CC6816A0086B56F /* SQTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D5F61B1CC6816A0086B56F /* SQTopicVideoView.xib */; };
 		79D5F6331CC6816A0086B56F /* SQTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F61D1CC6816A0086B56F /* SQTopicVoiceView.m */; };
 		79D5F6341CC6816A0086B56F /* SQTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D5F61E1CC6816A0086B56F /* SQTopicVoiceView.xib */; };
-		79D5F6441CC6855C0086B56F /* JLKSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F6381CC6855C0086B56F /* JLKSportModel.m */; };
-		79D5F6451CC6855C0086B56F /* JLKSportDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F63B1CC6855C0086B56F /* JLKSportDetailViewController.m */; };
-		79D5F6461CC6855C0086B56F /* JLKSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F63D1CC6855C0086B56F /* JLKSportViewController.m */; };
-		79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F63F1CC6855C0086B56F /* SQSportViewController.m */; };
-		79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F6421CC6855C0086B56F /* SQSportCell.m */; };
-		79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D5F6431CC6855C0086B56F /* SQSportCell.xib */; };
-		79E7ED1A1CC9BA3600FA6605 /* JLKUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */; };
-		79E7ED1C1CC9BA5A00FA6605 /* JLKUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */; };
-		79E7ED1F1CC9BE5600FA6605 /* JLKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */; };
 		925B68AE1CC75686000F8A33 /* YGJobCommitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */; };
 		925B68AF1CC75686000F8A33 /* YGJobCommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925B68AD1CC75686000F8A33 /* YGJobCommitCell.xib */; };
 		B1178EC81CA44EA500F0D799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1178EC71CA44EA500F0D799 /* Assets.xcassets */; };
@@ -64,8 +66,6 @@
 		B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C321CBFDAEF00207EE4 /* AppDelegate.m */; };
 		B1453C3C1CBFDAEF00207EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C331CBFDAEF00207EE4 /* main.m */; };
 		B1453C401CBFDE7800207EE4 /* SQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C3F1CBFDE7800207EE4 /* SQTabBarController.m */; };
-		B1453C561CBFDF1E00207EE4 /* SQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C541CBFDF1E00207EE4 /* SQMeViewController.m */; };
-		B1453C571CBFDF1E00207EE4 /* SQMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1453C551CBFDF1E00207EE4 /* SQMeViewController.xib */; };
 		B1453C5A1CBFE1B700207EE4 /* SQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C591CBFE1B700207EE4 /* SQNavigationController.m */; };
 		B1453C5D1CC076F300207EE4 /* SQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C5C1CC076F300207EE4 /* SQTabBar.m */; };
 		B1453C611CC07BD100207EE4 /* UIView+SQCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B1453C601CC07BD100207EE4 /* UIView+SQCustom.m */; };
@@ -342,12 +342,6 @@
 
 /* Begin PBXFileReference section */
 		2B76B8353D53D25BE8C3F186 /* libPods-LYZSJC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYZSJC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7901090F1CC79D0500BF6F99 /* JLKSportRankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportRankListViewController.h; sourceTree = "<group>"; };
-		790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportRankListViewController.m; sourceTree = "<group>"; };
-		790109121CC7A23100BF6F99 /* JLKRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankCell.h; sourceTree = "<group>"; };
-		790109131CC7A23100BF6F99 /* JLKRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankCell.m; sourceTree = "<group>"; };
-		790109171CC7A47700BF6F99 /* JLKRankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankModel.h; sourceTree = "<group>"; };
-		790109181CC7A47700BF6F99 /* JLKRankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankModel.m; sourceTree = "<group>"; };
 		79B7EB591CC72EC60065487A /* YGCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCategoryModel.h; sourceTree = "<group>"; };
 		79B7EB5A1CC72EC60065487A /* YGCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCategoryModel.m; sourceTree = "<group>"; };
 		79B7EB5B1CC72EC60065487A /* YGJobTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableModel.h; sourceTree = "<group>"; };
@@ -367,6 +361,31 @@
 		79B7EB6B1CC72EC60065487A /* YGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobTableViewCell.h; sourceTree = "<group>"; };
 		79B7EB6C1CC72EC60065487A /* YGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobTableViewCell.m; sourceTree = "<group>"; };
 		79B7EB6D1CC72EC60065487A /* YGJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGJobTableViewCell.xib; sourceTree = "<group>"; };
+		79BE3B761CCB270E00B0BA5A /* JLKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfo.h; sourceTree = "<group>"; };
+		79BE3B771CCB270E00B0BA5A /* JLKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfo.m; sourceTree = "<group>"; };
+		79BE3B7A1CCB270E00B0BA5A /* SQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQMeViewController.h; sourceTree = "<group>"; };
+		79BE3B7B1CCB270E00B0BA5A /* SQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQMeViewController.m; sourceTree = "<group>"; };
+		79BE3B7C1CCB270E00B0BA5A /* SQMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQMeViewController.xib; sourceTree = "<group>"; };
+		79BE3B7E1CCB270E00B0BA5A /* JLKUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfoView.h; sourceTree = "<group>"; };
+		79BE3B7F1CCB270E00B0BA5A /* JLKUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfoView.m; sourceTree = "<group>"; };
+		79BE3B801CCB270E00B0BA5A /* JLKUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLKUserInfoView.xib; sourceTree = "<group>"; };
+		79BE3B831CCB270E00B0BA5A /* JLKRankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankModel.h; sourceTree = "<group>"; };
+		79BE3B841CCB270E00B0BA5A /* JLKRankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankModel.m; sourceTree = "<group>"; };
+		79BE3B851CCB270E00B0BA5A /* JLKSportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportModel.h; sourceTree = "<group>"; };
+		79BE3B861CCB270E00B0BA5A /* JLKSportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportModel.m; sourceTree = "<group>"; };
+		79BE3B881CCB270E00B0BA5A /* JLKSportDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportDetailViewController.h; sourceTree = "<group>"; };
+		79BE3B891CCB270E00B0BA5A /* JLKSportDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportDetailViewController.m; sourceTree = "<group>"; };
+		79BE3B8A1CCB270E00B0BA5A /* JLKSportRankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportRankListViewController.h; sourceTree = "<group>"; };
+		79BE3B8B1CCB270E00B0BA5A /* JLKSportRankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportRankListViewController.m; sourceTree = "<group>"; };
+		79BE3B8C1CCB270E00B0BA5A /* JLKSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportViewController.h; sourceTree = "<group>"; };
+		79BE3B8D1CCB270E00B0BA5A /* JLKSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportViewController.m; sourceTree = "<group>"; };
+		79BE3B8E1CCB270E00B0BA5A /* SQSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSportViewController.h; sourceTree = "<group>"; };
+		79BE3B8F1CCB270E00B0BA5A /* SQSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportViewController.m; sourceTree = "<group>"; };
+		79BE3B911CCB270E00B0BA5A /* JLKRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKRankCell.h; sourceTree = "<group>"; };
+		79BE3B921CCB270E00B0BA5A /* JLKRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKRankCell.m; sourceTree = "<group>"; };
+		79BE3B931CCB270E00B0BA5A /* SQSportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSportCell.h; sourceTree = "<group>"; };
+		79BE3B941CCB270E00B0BA5A /* SQSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportCell.m; sourceTree = "<group>"; };
+		79BE3B951CCB270E00B0BA5A /* SQSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQSportCell.xib; sourceTree = "<group>"; };
 		79D5F5E91CC631650086B56F /* JLKPedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKPedometer.h; sourceTree = "<group>"; };
 		79D5F5EA1CC631650086B56F /* JLKPedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKPedometer.m; sourceTree = "<group>"; };
 		79D5F5F21CC681220086B56F /* SQTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTopWindow.h; sourceTree = "<group>"; };
@@ -409,22 +428,6 @@
 		79D5F61C1CC6816A0086B56F /* SQTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTopicVoiceView.h; sourceTree = "<group>"; };
 		79D5F61D1CC6816A0086B56F /* SQTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTopicVoiceView.m; sourceTree = "<group>"; };
 		79D5F61E1CC6816A0086B56F /* SQTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQTopicVoiceView.xib; sourceTree = "<group>"; };
-		79D5F6371CC6855C0086B56F /* JLKSportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportModel.h; sourceTree = "<group>"; };
-		79D5F6381CC6855C0086B56F /* JLKSportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportModel.m; sourceTree = "<group>"; };
-		79D5F63A1CC6855C0086B56F /* JLKSportDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportDetailViewController.h; sourceTree = "<group>"; };
-		79D5F63B1CC6855C0086B56F /* JLKSportDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportDetailViewController.m; sourceTree = "<group>"; };
-		79D5F63C1CC6855C0086B56F /* JLKSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKSportViewController.h; sourceTree = "<group>"; };
-		79D5F63D1CC6855C0086B56F /* JLKSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKSportViewController.m; sourceTree = "<group>"; };
-		79D5F63E1CC6855C0086B56F /* SQSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSportViewController.h; sourceTree = "<group>"; };
-		79D5F63F1CC6855C0086B56F /* SQSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportViewController.m; sourceTree = "<group>"; };
-		79D5F6411CC6855C0086B56F /* SQSportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSportCell.h; sourceTree = "<group>"; };
-		79D5F6421CC6855C0086B56F /* SQSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSportCell.m; sourceTree = "<group>"; };
-		79D5F6431CC6855C0086B56F /* SQSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQSportCell.xib; sourceTree = "<group>"; };
-		79E7ED181CC9BA3600FA6605 /* JLKUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfoView.h; sourceTree = "<group>"; };
-		79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfoView.m; sourceTree = "<group>"; };
-		79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLKUserInfoView.xib; sourceTree = "<group>"; };
-		79E7ED1D1CC9BE5600FA6605 /* JLKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKUserInfo.h; sourceTree = "<group>"; };
-		79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKUserInfo.m; sourceTree = "<group>"; };
 		841987F277890EB2B7FEBE7D /* Pods-LYZSJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZSJC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYZSJC/Pods-LYZSJC.release.xcconfig"; sourceTree = "<group>"; };
 		925B68AB1CC75686000F8A33 /* YGJobCommitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGJobCommitCell.h; sourceTree = "<group>"; };
 		925B68AC1CC75686000F8A33 /* YGJobCommitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGJobCommitCell.m; sourceTree = "<group>"; };
@@ -445,9 +448,6 @@
 		B1453C331CBFDAEF00207EE4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1453C3E1CBFDE7800207EE4 /* SQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTabBarController.h; sourceTree = "<group>"; };
 		B1453C3F1CBFDE7800207EE4 /* SQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTabBarController.m; sourceTree = "<group>"; };
-		B1453C531CBFDF1E00207EE4 /* SQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQMeViewController.h; sourceTree = "<group>"; };
-		B1453C541CBFDF1E00207EE4 /* SQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQMeViewController.m; sourceTree = "<group>"; };
-		B1453C551CBFDF1E00207EE4 /* SQMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQMeViewController.xib; sourceTree = "<group>"; };
 		B1453C581CBFE1B700207EE4 /* SQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQNavigationController.h; sourceTree = "<group>"; };
 		B1453C591CBFE1B700207EE4 /* SQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQNavigationController.m; sourceTree = "<group>"; };
 		B1453C5B1CC076F300207EE4 /* SQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTabBar.h; sourceTree = "<group>"; };
@@ -819,6 +819,101 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		79BE3B741CCB270E00B0BA5A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B751CCB270E00B0BA5A /* Models */,
+				79BE3B781CCB270E00B0BA5A /* ViewControllers */,
+				79BE3B7D1CCB270E00B0BA5A /* Views */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		79BE3B751CCB270E00B0BA5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B761CCB270E00B0BA5A /* JLKUserInfo.h */,
+				79BE3B771CCB270E00B0BA5A /* JLKUserInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79BE3B781CCB270E00B0BA5A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B791CCB270E00B0BA5A /* Resource */,
+				79BE3B7A1CCB270E00B0BA5A /* SQMeViewController.h */,
+				79BE3B7B1CCB270E00B0BA5A /* SQMeViewController.m */,
+				79BE3B7C1CCB270E00B0BA5A /* SQMeViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79BE3B791CCB270E00B0BA5A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		79BE3B7D1CCB270E00B0BA5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B7E1CCB270E00B0BA5A /* JLKUserInfoView.h */,
+				79BE3B7F1CCB270E00B0BA5A /* JLKUserInfoView.m */,
+				79BE3B801CCB270E00B0BA5A /* JLKUserInfoView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79BE3B811CCB270E00B0BA5A /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B821CCB270E00B0BA5A /* Models */,
+				79BE3B871CCB270E00B0BA5A /* ViewControllers */,
+				79BE3B901CCB270E00B0BA5A /* Views */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		79BE3B821CCB270E00B0BA5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B831CCB270E00B0BA5A /* JLKRankModel.h */,
+				79BE3B841CCB270E00B0BA5A /* JLKRankModel.m */,
+				79BE3B851CCB270E00B0BA5A /* JLKSportModel.h */,
+				79BE3B861CCB270E00B0BA5A /* JLKSportModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79BE3B871CCB270E00B0BA5A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B881CCB270E00B0BA5A /* JLKSportDetailViewController.h */,
+				79BE3B891CCB270E00B0BA5A /* JLKSportDetailViewController.m */,
+				79BE3B8A1CCB270E00B0BA5A /* JLKSportRankListViewController.h */,
+				79BE3B8B1CCB270E00B0BA5A /* JLKSportRankListViewController.m */,
+				79BE3B8C1CCB270E00B0BA5A /* JLKSportViewController.h */,
+				79BE3B8D1CCB270E00B0BA5A /* JLKSportViewController.m */,
+				79BE3B8E1CCB270E00B0BA5A /* SQSportViewController.h */,
+				79BE3B8F1CCB270E00B0BA5A /* SQSportViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79BE3B901CCB270E00B0BA5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79BE3B911CCB270E00B0BA5A /* JLKRankCell.h */,
+				79BE3B921CCB270E00B0BA5A /* JLKRankCell.m */,
+				79BE3B931CCB270E00B0BA5A /* SQSportCell.h */,
+				79BE3B941CCB270E00B0BA5A /* SQSportCell.m */,
+				79BE3B951CCB270E00B0BA5A /* SQSportCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		79D5F5F51CC6816A0086B56F /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -891,73 +986,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		79D5F6351CC6855C0086B56F /* Sport */ = {
-			isa = PBXGroup;
-			children = (
-				79D5F6361CC6855C0086B56F /* Models */,
-				79D5F6391CC6855C0086B56F /* ViewControllers */,
-				79D5F6401CC6855C0086B56F /* Views */,
-			);
-			path = Sport;
-			sourceTree = "<group>";
-		};
-		79D5F6361CC6855C0086B56F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				79D5F6371CC6855C0086B56F /* JLKSportModel.h */,
-				79D5F6381CC6855C0086B56F /* JLKSportModel.m */,
-				790109171CC7A47700BF6F99 /* JLKRankModel.h */,
-				790109181CC7A47700BF6F99 /* JLKRankModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		79D5F6391CC6855C0086B56F /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				79D5F63A1CC6855C0086B56F /* JLKSportDetailViewController.h */,
-				79D5F63B1CC6855C0086B56F /* JLKSportDetailViewController.m */,
-				79D5F63C1CC6855C0086B56F /* JLKSportViewController.h */,
-				79D5F63D1CC6855C0086B56F /* JLKSportViewController.m */,
-				79D5F63E1CC6855C0086B56F /* SQSportViewController.h */,
-				79D5F63F1CC6855C0086B56F /* SQSportViewController.m */,
-				7901090F1CC79D0500BF6F99 /* JLKSportRankListViewController.h */,
-				790109101CC79D0500BF6F99 /* JLKSportRankListViewController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		79D5F6401CC6855C0086B56F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				79D5F6411CC6855C0086B56F /* SQSportCell.h */,
-				79D5F6421CC6855C0086B56F /* SQSportCell.m */,
-				79D5F6431CC6855C0086B56F /* SQSportCell.xib */,
-				790109121CC7A23100BF6F99 /* JLKRankCell.h */,
-				790109131CC7A23100BF6F99 /* JLKRankCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		79E7ED161CC9BA0F00FA6605 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				79E7ED1D1CC9BE5600FA6605 /* JLKUserInfo.h */,
-				79E7ED1E1CC9BE5600FA6605 /* JLKUserInfo.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		79E7ED171CC9BA0F00FA6605 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				79E7ED181CC9BA3600FA6605 /* JLKUserInfoView.h */,
-				79E7ED191CC9BA3600FA6605 /* JLKUserInfoView.m */,
-				79E7ED1B1CC9BA5A00FA6605 /* JLKUserInfoView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B1178EAF1CA44EA400F0D799 = {
 			isa = PBXGroup;
 			children = (
@@ -1025,30 +1053,10 @@
 				79D5F5F51CC6816A0086B56F /* Home */,
 				79B7EB571CC72EC60065487A /* Job */,
 				B196BF151CC4E1340097A56F /* Add */,
-				79D5F6351CC6855C0086B56F /* Sport */,
-				B1453C281CBFDAEF00207EE4 /* Me */,
+				79BE3B811CCB270E00B0BA5A /* Sport */,
+				79BE3B741CCB270E00B0BA5A /* Me */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		B1453C281CBFDAEF00207EE4 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				79E7ED161CC9BA0F00FA6605 /* Models */,
-				B1453C2A1CBFDAEF00207EE4 /* ViewControllers */,
-				79E7ED171CC9BA0F00FA6605 /* Views */,
-			);
-			path = Me;
-			sourceTree = "<group>";
-		};
-		B1453C2A1CBFDAEF00207EE4 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				B1453C531CBFDF1E00207EE4 /* SQMeViewController.h */,
-				B1453C541CBFDF1E00207EE4 /* SQMeViewController.m */,
-				B1453C551CBFDF1E00207EE4 /* SQMeViewController.xib */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B1453C301CBFDAEF00207EE4 /* Ohter */ = {
@@ -1633,6 +1641,7 @@
 				B166B9471CCA22EC00F801AB /* d_nanhaier@2x.png in Resources */,
 				B166B93F1CCA22EC00F801AB /* d_jiyan@2x.png in Resources */,
 				B166B9E81CCA22EC00F801AB /* lxh_tuijian@2x.png in Resources */,
+				79BE3B9A1CCB270E00B0BA5A /* JLKUserInfoView.xib in Resources */,
 				B166B98F1CCA22EC00F801AB /* lxh_beicui@2x.png in Resources */,
 				B166B93E1CCA22EC00F801AB /* d_huaxin@2x.png in Resources */,
 				B166B9B41CCA22EC00F801AB /* lxh_jiekexun.gif in Resources */,
@@ -1643,7 +1652,6 @@
 				B166B9811CCA22EC00F801AB /* o_weibo@2x.png in Resources */,
 				B166B9B61CCA22EC00F801AB /* lxh_jiekexun@2x.png in Resources */,
 				B166B93B1CCA22EC00F801AB /* d_hehe@2x.png in Resources */,
-				B1453C571CBFDF1E00207EE4 /* SQMeViewController.xib in Resources */,
 				B166B9BC1CCA22EC00F801AB /* lxh_juhan@2x.png in Resources */,
 				B166B9DA1CCA22EC00F801AB /* lxh_qiuguanzhu.gif in Resources */,
 				B166B9311CCA22EC00F801AB /* d_chitangyuan@2x.png in Resources */,
@@ -1677,7 +1685,6 @@
 				B166B9901CCA22EC00F801AB /* lxh_beidian.gif in Resources */,
 				B166B9821CCA22EC00F801AB /* o_weiguan@2x.png in Resources */,
 				B166B9331CCA22EC00F801AB /* d_ding@2x.png in Resources */,
-				79D5F6491CC6855C0086B56F /* SQSportCell.xib in Resources */,
 				B166B9B71CCA22EC00F801AB /* lxh_jiujie.gif in Resources */,
 				B166B95F1CCA22EC00F801AB /* d_youhengheng@2x.png in Resources */,
 				B166B9861CCA22EC00F801AB /* w_fuyun@2x.png in Resources */,
@@ -1685,6 +1692,7 @@
 				B166B9B01CCA22EC00F801AB /* lxh_haoxihuan@2x.png in Resources */,
 				B166B9BF1CCA22EC00F801AB /* lxh_koubishi@2x.png in Resources */,
 				B166B9781CCA22EC00F801AB /* l_xin@2x.png in Resources */,
+				79BE3B981CCB270E00B0BA5A /* SQMeViewController.xib in Resources */,
 				B166B9561CCA22EC00F801AB /* d_tu@2x.png in Resources */,
 				B166B99A1CCA22EC00F801AB /* lxh_buhaoyisi.png in Resources */,
 				B1178ECB1CA44EA500F0D799 /* LaunchScreen.storyboard in Resources */,
@@ -1767,6 +1775,7 @@
 				B166B9EF1CCA22EC00F801AB /* lxh_xiaohaha.gif in Resources */,
 				B166B9B31CCA22EC00F801AB /* lxh_holdzhu@2x.png in Resources */,
 				B166B9521CCA22EC00F801AB /* d_sikao@2x.png in Resources */,
+				79BE3BA31CCB270E00B0BA5A /* SQSportCell.xib in Resources */,
 				B166BA331CCA528000F801AB /* default.plist in Resources */,
 				B166B9791CCA22EC00F801AB /* o_dangao@2x.png in Resources */,
 				B166B9E01CCA22EC00F801AB /* lxh_shuaishuaishou.gif in Resources */,
@@ -1910,17 +1919,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D5F6481CC6855C0086B56F /* SQSportCell.m in Sources */,
 				B15FC3F81CC756100093516E /* SQCommentCell.m in Sources */,
 				B15FC3FC1CC757240093516E /* UIImageView+SQCustom.m in Sources */,
 				79B7EB781CC72EC60065487A /* YGJobTableViewCell.m in Sources */,
-				79D5F6441CC6855C0086B56F /* JLKSportModel.m in Sources */,
 				79D5F6221CC6816A0086B56F /* SQCommentViewController.m in Sources */,
 				79D5F5EB1CC631650086B56F /* JLKPedometer.m in Sources */,
 				B166BA2B1CCA503300F801AB /* SQEmotionTool.m in Sources */,
 				B1B10C081CC4C596003B45EF /* SQConst.m in Sources */,
+				79BE3B971CCB270E00B0BA5A /* SQMeViewController.m in Sources */,
 				B1453C661CC0C06500207EE4 /* UIBarButtonItem+SQCustom.m in Sources */,
-				79D5F6451CC6855C0086B56F /* JLKSportDetailViewController.m in Sources */,
 				79B7EB6E1CC72EC60065487A /* YGCategoryModel.m in Sources */,
 				79D5F6261CC6816A0086B56F /* SQShowPictureViewController.m in Sources */,
 				B166BA281CCA4FCE00F801AB /* SQEmotionButton.m in Sources */,
@@ -1929,25 +1936,29 @@
 				B166BA101CCA28EE00F801AB /* SQEmotionKeyboard.m in Sources */,
 				B166BA251CCA4F1700F801AB /* SQEmotionPageView.m in Sources */,
 				79D5F6311CC6816A0086B56F /* SQTopicVideoView.m in Sources */,
-				790109111CC79D0500BF6F99 /* JLKSportRankListViewController.m in Sources */,
+				79BE3B9D1CCB270E00B0BA5A /* JLKSportDetailViewController.m in Sources */,
+				79BE3BA21CCB270E00B0BA5A /* SQSportCell.m in Sources */,
 				79D5F62F1CC6816A0086B56F /* SQTopicPictureView.m in Sources */,
 				B1D2B6741CC8C835009CF3BF /* SQPlaceholderTextView.m in Sources */,
 				B1453C3C1CBFDAEF00207EE4 /* main.m in Sources */,
+				79BE3B9F1CCB270E00B0BA5A /* JLKSportViewController.m in Sources */,
+				79BE3BA11CCB270E00B0BA5A /* JLKRankCell.m in Sources */,
 				B166BA221CCA4E9000F801AB /* SQEmotionListView.m in Sources */,
+				79BE3B991CCB270E00B0BA5A /* JLKUserInfoView.m in Sources */,
+				79BE3B961CCB270E00B0BA5A /* JLKUserInfo.m in Sources */,
 				B1453C5A1CBFE1B700207EE4 /* SQNavigationController.m in Sources */,
 				B196BF241CC517AF0097A56F /* NSDate+SQCustom.m in Sources */,
-				B1453C561CBFDF1E00207EE4 /* SQMeViewController.m in Sources */,
-				790109151CC7A23100BF6F99 /* JLKRankCell.m in Sources */,
 				B166BA1F1CCA4DB500F801AB /* UITextView+SQCustom.m in Sources */,
-				79D5F6461CC6855C0086B56F /* JLKSportViewController.m in Sources */,
 				79D5F6201CC6816A0086B56F /* SQTopic.m in Sources */,
 				B1453C401CBFDE7800207EE4 /* SQTabBarController.m in Sources */,
 				B1D2B6701CC8AD7D009CF3BF /* SQAddTextViewController.m in Sources */,
+				79BE3B9B1CCB270E00B0BA5A /* JLKRankModel.m in Sources */,
 				79B7EB6F1CC72EC60065487A /* YGJobTableModel.m in Sources */,
 				B166BA1C1CCA4D4700F801AB /* SQEmotionAttachment.m in Sources */,
 				B1453C611CC07BD100207EE4 /* UIView+SQCustom.m in Sources */,
 				79B7EB701CC72EC60065487A /* SQJobViewController.m in Sources */,
 				79D5F6211CC6816A0086B56F /* SQUser.m in Sources */,
+				79BE3B9E1CCB270E00B0BA5A /* JLKSportRankListViewController.m in Sources */,
 				79D5F62D1CC6816A0086B56F /* SQTopicCell.m in Sources */,
 				B166BA131CCA293100F801AB /* SQEmotionTabBar.m in Sources */,
 				B166BA0D1CCA286C00F801AB /* SQEmotion.m in Sources */,
@@ -1955,22 +1966,20 @@
 				925B68AE1CC75686000F8A33 /* YGJobCommitCell.m in Sources */,
 				79D5F6281CC6816A0086B56F /* SQTopicTableViewController.m in Sources */,
 				79D5F62B1CC6816A0086B56F /* SQHomeTitleButton.m in Sources */,
+				79BE3BA01CCB270E00B0BA5A /* SQSportViewController.m in Sources */,
 				79B7EB761CC72EC60065487A /* YGJobDetailHeaderView.m in Sources */,
 				79D5F6331CC6816A0086B56F /* SQTopicVoiceView.m in Sources */,
 				B196BF1D1CC4E1340097A56F /* SQAddViewController.m in Sources */,
-				790109191CC7A47700BF6F99 /* JLKRankModel.m in Sources */,
 				B166BA161CCA2A0900F801AB /* SQEmotionTabBarButton.m in Sources */,
 				79D5F61F1CC6816A0086B56F /* SQComment.m in Sources */,
 				79B7EB721CC72EC60065487A /* YGJobDetailViewController.m in Sources */,
 				B1453C3B1CBFDAEF00207EE4 /* AppDelegate.m in Sources */,
 				79B7EB741CC72EC60065487A /* YGCategoryTableViewCell.m in Sources */,
 				B15FC3FF1CC757990093516E /* UIImage+SQCustom.m in Sources */,
-				79E7ED1A1CC9BA3600FA6605 /* JLKUserInfoView.m in Sources */,
-				79E7ED1F1CC9BE5600FA6605 /* JLKUserInfo.m in Sources */,
 				79D5F6291CC6816A0086B56F /* SQCommentHeaderView.m in Sources */,
+				79BE3B9C1CCB270E00B0BA5A /* JLKSportModel.m in Sources */,
 				B1D2B6771CC8CF06009CF3BF /* SQAddTagToolbar.m in Sources */,
 				79D5F5F41CC681220086B56F /* SQTopWindow.m in Sources */,
-				79D5F6471CC6855C0086B56F /* SQSportViewController.m in Sources */,
 				79D5F62C1CC6816A0086B56F /* SQProgressView.m in Sources */,
 				B166BA191CCA4CD600F801AB /* NSString+SQEmoji.m in Sources */,
 				79D5F6251CC6816A0086B56F /* SQHomeViewController.m in Sources */,
